@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Jane Smith",
+    "role": "Program Chair",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/jane-smith.jpg",
+    "profileUrl": "https://www.bbsw.org/jane-smith"
+  },
+  {
+    "name": "John Doe",
+    "role": "Program Co-Chair",
+    "affiliation": "Pfizer",
+    "photo": "committee/photos/john-doe.jpg",
+    "profileUrl": "https://www.bbsw.org/john-doe"
+  }
+]
