@@ -106,13 +106,17 @@
     return '<span class="bbsw-name">' + text + '</span>';
   }
 
-  function card(member) {
+  function teamName(role) {
+    return role.replace(/ Team Lead$/i, '');
+  }
+
+  function card(member, showRole) {
     var imgSrc = GITHUB_RAW + member.photo;
     return (
       '<div class="bbsw-card">' +
         '<img src="' + imgSrc + '" alt="' + member.name + '" loading="lazy">' +
         nameEl(member) +
-        '<span class="bbsw-role">' + member.role + '</span>' +
+        (showRole ? '<span class="bbsw-role">' + member.role + '</span>' : '') +
         (member.affiliation ? '<span class="bbsw-affiliation">' + member.affiliation + '</span>' : '') +
       '</div>'
     );
@@ -122,11 +126,12 @@
     var order = [];
     var groups = {};
     members.forEach(function (m) {
-      if (!groups[m.role]) {
-        groups[m.role] = [];
-        order.push(m.role);
+      var key = teamName(m.role);
+      if (!groups[key]) {
+        groups[key] = [];
+        order.push(key);
       }
-      groups[m.role].push(m);
+      groups[key].push(m);
     });
     return { order: order, groups: groups };
   }
@@ -143,7 +148,7 @@
       // Steering Committee
       html += '<div class="bbsw-section-heading">Steering Committee</div>';
       html += '<div class="bbsw-grid">';
-      steering.forEach(function (m) { html += card(m); });
+      steering.forEach(function (m) { html += card(m, true); });
       html += '</div>';
 
       // Committee Members grouped by role
@@ -151,7 +156,7 @@
       grouped.order.forEach(function (role) {
         html += '<div class="bbsw-role-heading">' + role + '</div>';
         html += '<div class="bbsw-grid">';
-        grouped.groups[role].forEach(function (m) { html += card(m); });
+        grouped.groups[role].forEach(function (m) { html += card(m, false); });
         html += '</div>';
       });
 
