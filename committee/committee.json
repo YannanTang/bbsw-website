@@ -10,7 +10,7 @@
   },
   {
     "name": "Ron Yu",
-    "role": "President-Elect",
+    "role": "President",
     "committee": "Steering Committee",
     "affiliation": "Gilead",
     "photo": "committee/photos/ron-yu.jpg",
@@ -25,28 +25,36 @@
     "profileUrl": "https://www.bbsw.org/ning-leng"
   },
   {
-    "name": "Jingjing Gao",
-    "role": "Fundraising & Outreach",
-    "committee": "Steering Committee",
-    "affiliation": "Neurocrine Biosciences",
-    "photo": "committee/photos/jingjing-gao.png",
-    "profileUrl": "https://www.bbsw.org/jingjing-gao"
-  },
-  {
     "name": "Jing Du",
-    "role": "Operations",
+    "role": "Operations Team Lead",
     "committee": "Steering Committee",
     "affiliation": "",
     "photo": "committee/photos/jing-du.jpg",
     "profileUrl": ""
   },
   {
+    "name": "Jingjing Gao",
+    "role": "Fundraising & Outreach Team Lead",
+    "committee": "Steering Committee",
+    "affiliation": "Neurocrine Biosciences",
+    "photo": "committee/photos/jingjing-gao.png",
+    "profileUrl": "https://www.bbsw.org/jingjing-gao"
+  },
+  {
     "name": "Merrill Birkner",
-    "role": "Statistical Technical Programs",
+    "role": "Statistical Programs Team Lead",
     "committee": "Committee Members",
     "affiliation": "Gilead",
     "photo": "committee/photos/merrill-birkner.jpeg",
     "profileUrl": "https://www.bbsw.org/merrill-birkner"
+  },
+  {
+    "name": "Li Zheng",
+    "role": "Data Science Programs Team Lead",
+    "committee": "Committee Members",
+    "affiliation": "Alumis",
+    "photo": "committee/photos/li-zheng.png",
+    "profileUrl": "https://www.bbsw.org/li-zheng"
   },
   {
     "name": "Tuan Nguyen",
@@ -74,14 +82,6 @@
     "photo": "committee/photos/haijun-ma.jpeg",
     "profileUrl": "https://www.bbsw.org/haijun-ma",
     "hidden": true
-  },
-  {
-    "name": "Li Zheng",
-    "role": "Data Science Technical Programs",
-    "committee": "Committee Members",
-    "affiliation": "Alumis",
-    "photo": "committee/photos/li-zheng.png",
-    "profileUrl": "https://www.bbsw.org/li-zheng"
   },
   {
     "name": "Laura Harris",
