@@ -20,7 +20,7 @@
     "role": "Fundraising & Outreach",
     "committee": "Steering Committee",
     "affiliation": "Neurocrine Biosciences",
-    "photo": "committee/photos/jingjing-gao.jpg",
+    "photo": "committee/photos/jingjing-gao.png",
     "profileUrl": "https://www.bbsw.org/jingjing-gao"
   },
   {
@@ -44,7 +44,7 @@
     "role": "Statistical Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "Genentech",
-    "photo": "committee/photos/godwin-yung.jpg",
+    "photo": "committee/photos/godwin-yung.jpeg",
     "profileUrl": "https://www.bbsw.org/godwin-yung"
   },
   {
@@ -52,7 +52,7 @@
     "role": "Statistical Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "Exelixis",
-    "photo": "committee/photos/haijun-ma.jpg",
+    "photo": "committee/photos/haijun-ma.jpeg",
     "profileUrl": "https://www.bbsw.org/haijun-ma"
   },
   {
@@ -60,7 +60,7 @@
     "role": "Data Science Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "Alumis",
-    "photo": "committee/photos/li-zheng.jpg",
+    "photo": "committee/photos/li-zheng.png",
     "profileUrl": "https://www.bbsw.org/li-zheng"
   },
   {
@@ -76,7 +76,7 @@
     "role": "Data Science Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "TrapezoidX",
-    "photo": "committee/photos/nalin-tikoo.jpg",
+    "photo": "committee/photos/nalin-tikoo.png",
     "profileUrl": "https://www.bbsw.org/nalin"
   },
   {
@@ -84,7 +84,7 @@
     "role": "Non-Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "Gilead",
-    "photo": "committee/photos/merrill-birkner.jpg",
+    "photo": "committee/photos/merrill-birkner.jpeg",
     "profileUrl": "https://www.bbsw.org/merrill-birkner"
   },
   {
@@ -92,7 +92,7 @@
     "role": "Non-Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "Gilead",
-    "photo": "committee/photos/george-wu.jpg",
+    "photo": "committee/photos/george-wu.png",
     "profileUrl": ""
   },
   {
@@ -100,7 +100,7 @@
     "role": "Technology",
     "committee": "Steering Committee",
     "affiliation": "Genentech",
-    "photo": "committee/photos/yannan-tang.jpg",
+    "photo": "committee/photos/yannan-tang.png",
     "profileUrl": ""
   },
   {
@@ -196,7 +196,7 @@
     "role": "Fundraising & Outreach",
     "committee": "Committee Members",
     "affiliation": "Gilead",
-    "photo": "committee/photos/xuehan-ren.jpg",
+    "photo": "committee/photos/xuehan-ren.jpeg",
     "profileUrl": ""
   },
   {
@@ -276,7 +276,7 @@
     "role": "Statistical Technical Programs",
     "committee": "Committee Members",
     "affiliation": "Pandora Bio",
-    "photo": "committee/photos/tara-maddala.jpg",
+    "photo": "committee/photos/tara-maddala.png",
     "profileUrl": ""
   },
   {
@@ -292,7 +292,7 @@
     "role": "Data Science Technical Programs",
     "committee": "Committee Members",
     "affiliation": "Scorpion Therapeutics",
-    "photo": "committee/photos/jenny-yuan.jpg",
+    "photo": "committee/photos/jenny-yuan.png",
     "profileUrl": ""
   },
   {
@@ -300,7 +300,7 @@
     "role": "Data Science Technical Programs",
     "committee": "Committee Members",
     "affiliation": "Gilead",
-    "photo": "committee/photos/gianna-huang.jpg",
+    "photo": "committee/photos/gianna-huang.png",
     "profileUrl": ""
   },
   {
@@ -316,7 +316,7 @@
     "role": "Non-Technical Programs",
     "committee": "Committee Members",
     "affiliation": "Genentech",
-    "photo": "committee/photos/yinqi-zhao.jpg",
+    "photo": "committee/photos/yinqi-zhao.png",
     "profileUrl": ""
   },
   {
@@ -332,7 +332,7 @@
     "role": "Non-Technical Programs",
     "committee": "Committee Members",
     "affiliation": "Gilead",
-    "photo": "committee/photos/maria-ciarleglio.jpg",
+    "photo": "committee/photos/maria-ciarleglio.png",
     "profileUrl": ""
   },
   {
@@ -340,7 +340,7 @@
     "role": "Non-Technical Programs",
     "committee": "Committee Members",
     "affiliation": "Genentech",
-    "photo": "committee/photos/ran-ma.jpg",
+    "photo": "committee/photos/ran-ma.jpeg",
     "profileUrl": ""
   },
   {
@@ -348,7 +348,7 @@
     "role": "Non-Technical Programs",
     "committee": "Committee Members",
     "affiliation": "Genentech",
-    "photo": "committee/photos/jiying-zou-2.jpg",
+    "photo": "committee/photos/jiying-zou-2.webp",
     "profileUrl": ""
   },
   {
@@ -380,7 +380,7 @@
     "role": "Technology",
     "committee": "Committee Members",
     "affiliation": "Genentech",
-    "photo": "committee/photos/lucie-zhang.jpg",
+    "photo": "committee/photos/lucie-zhang.png",
     "profileUrl": ""
   },
   {
@@ -388,7 +388,7 @@
     "role": "Technology",
     "committee": "Committee Members",
     "affiliation": "Genentech",
-    "photo": "committee/photos/shreya-sreeram.jpg",
+    "photo": "committee/photos/shreya-sreeram.png",
     "profileUrl": ""
   }
 ]
