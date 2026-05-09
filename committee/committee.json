@@ -17,6 +17,14 @@
     "profileUrl": "https://www.bbsw.org/ron-yu"
   },
   {
+    "name": "Ning Leng",
+    "role": "President-Elect",
+    "committee": "Steering Committee",
+    "affiliation": "AbbVie",
+    "photo": "committee/photos/ning-leng.jpeg",
+    "profileUrl": "https://www.bbsw.org/ning-leng"
+  },
+  {
     "name": "Jingjing Gao",
     "role": "Fundraising & Outreach",
     "committee": "Steering Committee",
@@ -38,7 +46,8 @@
     "committee": "Committee Members",
     "affiliation": "Alector",
     "photo": "committee/photos/tuan-nguyen.jpg",
-    "profileUrl": "https://www.bbsw.org/tuan-nguyen"
+    "profileUrl": "https://www.bbsw.org/tuan-nguyen",
+    "hidden": true
   },
   {
     "name": "Godwin Yung",
@@ -46,7 +55,8 @@
     "committee": "Committee Members",
     "affiliation": "Genentech",
     "photo": "committee/photos/godwin-yung.jpeg",
-    "profileUrl": "https://www.bbsw.org/godwin-yung"
+    "profileUrl": "https://www.bbsw.org/godwin-yung",
+    "hidden": true
   },
   {
     "name": "Haijun Ma",
@@ -54,7 +64,8 @@
     "committee": "Committee Members",
     "affiliation": "Exelixis",
     "photo": "committee/photos/haijun-ma.jpeg",
-    "profileUrl": "https://www.bbsw.org/haijun-ma"
+    "profileUrl": "https://www.bbsw.org/haijun-ma",
+    "hidden": true
   },
   {
     "name": "Li Zheng",
@@ -62,7 +73,8 @@
     "committee": "Committee Members",
     "affiliation": "Alumis",
     "photo": "committee/photos/li-zheng.png",
-    "profileUrl": "https://www.bbsw.org/li-zheng"
+    "profileUrl": "https://www.bbsw.org/li-zheng",
+    "hidden": true
   },
   {
     "name": "Laura Harris",
@@ -70,7 +82,8 @@
     "committee": "Committee Members",
     "affiliation": "Mirum Pharmaceuticals",
     "photo": "committee/photos/laura-harris.jpg",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Nalin Tikoo",
@@ -78,7 +91,8 @@
     "committee": "Committee Members",
     "affiliation": "TrapezoidX",
     "photo": "committee/photos/nalin-tikoo.png",
-    "profileUrl": "https://www.bbsw.org/nalin"
+    "profileUrl": "https://www.bbsw.org/nalin",
+    "hidden": true
   },
   {
     "name": "Merrill Birkner",
@@ -103,6 +117,14 @@
     "affiliation": "Genentech",
     "photo": "committee/photos/yannan-tang.png",
     "profileUrl": ""
+  },
+  {
+    "name": "Jingjing Gao",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "Neurocrine Biosciences",
+    "photo": "committee/photos/jingjing-gao.png",
+    "profileUrl": "https://www.bbsw.org/jingjing-gao"
   },
   {
     "name": "Danqing Xu",
@@ -217,6 +239,14 @@
     "profileUrl": ""
   },
   {
+    "name": "Jing Du",
+    "role": "Operations",
+    "committee": "Committee Members",
+    "affiliation": "",
+    "photo": "committee/photos/jing-du.jpg",
+    "profileUrl": ""
+  },
+  {
     "name": "Xiyu Cao",
     "role": "Operations",
     "committee": "Committee Members",
@@ -324,7 +354,8 @@
     "committee": "Committee Members",
     "affiliation": "Genentech",
     "photo": "committee/photos/yinqi-zhao.png",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Charles Liu",
@@ -332,7 +363,8 @@
     "committee": "Committee Members",
     "affiliation": "Gilead",
     "photo": "committee/photos/charles-liu.jpg",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Maria Ciarleglio",
@@ -340,7 +372,8 @@
     "committee": "Committee Members",
     "affiliation": "Gilead",
     "photo": "committee/photos/maria-ciarleglio.png",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Ran Ma",
@@ -348,7 +381,8 @@
     "committee": "Committee Members",
     "affiliation": "Genentech",
     "photo": "committee/photos/ran-ma.jpeg",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Jiying Zou",
@@ -356,6 +390,15 @@
     "committee": "Committee Members",
     "affiliation": "Genentech",
     "photo": "committee/photos/jiying-zou-2.webp",
+    "profileUrl": "",
+    "hidden": true
+  },
+  {
+    "name": "Yannan Tang",
+    "role": "Technology",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/yannan-tang.png",
     "profileUrl": ""
   },
   {
