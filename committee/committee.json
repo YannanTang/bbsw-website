@@ -1,16 +1,394 @@
 [
   {
-    "name": "Jane Smith",
-    "role": "Program Chair",
-    "affiliation": "Genentech",
-    "photo": "committee/photos/jane-smith.jpg",
-    "profileUrl": "https://www.bbsw.org/jane-smith"
+    "name": "Ruixiao Lu",
+    "role": "President",
+    "committee": "Steering Committee",
+    "affiliation": "Alumis",
+    "photo": "committee/photos/ruixiao-lu.jpg",
+    "profileUrl": "https://www.bbsw.org/ruixiao-lu"
   },
   {
-    "name": "John Doe",
-    "role": "Program Co-Chair",
-    "affiliation": "Pfizer",
-    "photo": "committee/photos/john-doe.jpg",
-    "profileUrl": "https://www.bbsw.org/john-doe"
+    "name": "Ron Yu",
+    "role": "President-Elect",
+    "committee": "Steering Committee",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/ron-yu.jpg",
+    "profileUrl": "https://www.bbsw.org/ron-yu"
+  },
+  {
+    "name": "Jingjing Gao",
+    "role": "Fundraising & Outreach",
+    "committee": "Steering Committee",
+    "affiliation": "Neurocrine Biosciences",
+    "photo": "committee/photos/jingjing-gao.jpg",
+    "profileUrl": "https://www.bbsw.org/jingjing-gao"
+  },
+  {
+    "name": "Jing Du",
+    "role": "Operations",
+    "committee": "Steering Committee",
+    "affiliation": "",
+    "photo": "committee/photos/jing-du.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Tuan Nguyen",
+    "role": "Statistical Technical Programs",
+    "committee": "Steering Committee",
+    "affiliation": "Alector",
+    "photo": "committee/photos/tuan-nguyen.jpg",
+    "profileUrl": "https://www.bbsw.org/tuan-nguyen"
+  },
+  {
+    "name": "Godwin Yung",
+    "role": "Statistical Technical Programs",
+    "committee": "Steering Committee",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/godwin-yung.jpg",
+    "profileUrl": "https://www.bbsw.org/godwin-yung"
+  },
+  {
+    "name": "Haijun Ma",
+    "role": "Statistical Technical Programs",
+    "committee": "Steering Committee",
+    "affiliation": "Exelixis",
+    "photo": "committee/photos/haijun-ma.jpg",
+    "profileUrl": "https://www.bbsw.org/haijun-ma"
+  },
+  {
+    "name": "Li Zheng",
+    "role": "Data Science Technical Programs",
+    "committee": "Steering Committee",
+    "affiliation": "Alumis",
+    "photo": "committee/photos/li-zheng.jpg",
+    "profileUrl": "https://www.bbsw.org/li-zheng"
+  },
+  {
+    "name": "Laura Harris",
+    "role": "Data Science Technical Programs",
+    "committee": "Steering Committee",
+    "affiliation": "Mirum Pharmaceuticals",
+    "photo": "committee/photos/laura-harris.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Nalin Tikoo",
+    "role": "Data Science Technical Programs",
+    "committee": "Steering Committee",
+    "affiliation": "TrapezoidX",
+    "photo": "committee/photos/nalin-tikoo.jpg",
+    "profileUrl": "https://www.bbsw.org/nalin"
+  },
+  {
+    "name": "Merrill Birkner",
+    "role": "Non-Technical Programs",
+    "committee": "Steering Committee",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/merrill-birkner.jpg",
+    "profileUrl": "https://www.bbsw.org/merrill-birkner"
+  },
+  {
+    "name": "George Wu",
+    "role": "Non-Technical Programs",
+    "committee": "Steering Committee",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/george-wu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Yannan Tang",
+    "role": "Technology",
+    "committee": "Steering Committee",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/yannan-tang.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Danqing Xu",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "AbbVie",
+    "photo": "committee/photos/danqing-xu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Jie Liu",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/jie-liu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Jiayi Shen",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "BeOne Medicines",
+    "photo": "committee/photos/jiayi-shen.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Jeni Zhou",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "AbbVie",
+    "photo": "committee/photos/jeni-zhou.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Jiying Zou",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/jiying-zou.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Mingwei Fei",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "AbbVie",
+    "photo": "committee/photos/mingwei-fei.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Meiling Huang",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/meiling-huang.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Rong Jiang",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "ClinData Insight",
+    "photo": "committee/photos/rong-jiang.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Renie Liu",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "UCSD",
+    "photo": "committee/photos/renie-liu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Serene Jiang",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "Johnson & Johnson",
+    "photo": "committee/photos/serene-jiang.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Tracy He",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "BridgeBio",
+    "photo": "committee/photos/tracy-he.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Xuehan Ren",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/xuehan-ren.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Xuefeng Hou",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/xuefeng-hou.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Yuan Tian",
+    "role": "Fundraising & Outreach",
+    "committee": "Committee Members",
+    "affiliation": "Corcept",
+    "photo": "committee/photos/yuan-tian.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Xiyu Cao",
+    "role": "Operations",
+    "committee": "Committee Members",
+    "affiliation": "Real Estate Investment",
+    "photo": "committee/photos/xiyu-cao.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Xiaoye Ma",
+    "role": "Operations",
+    "committee": "Committee Members",
+    "affiliation": "Apogee Therapeutics",
+    "photo": "committee/photos/xiaoye-ma.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Na Xu",
+    "role": "Operations",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/na-xu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Jingyang Zhang",
+    "role": "Operations",
+    "committee": "Committee Members",
+    "affiliation": "AstraZeneca",
+    "photo": "committee/photos/jingyang-zhang.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Anqi Zhu",
+    "role": "Operations",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/anqi-zhu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Jingye Wang",
+    "role": "Operations",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/jingye-wang.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Li Zhang",
+    "role": "Statistical Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "UCSF",
+    "photo": "committee/photos/li-zhang.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Tara Maddala",
+    "role": "Statistical Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Pandora Bio",
+    "photo": "committee/photos/tara-maddala.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Mengjia Yu",
+    "role": "Statistical Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "AbbVie",
+    "photo": "committee/photos/mengjia-yu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Jenny Yuan",
+    "role": "Data Science Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Scorpion Therapeutics",
+    "photo": "committee/photos/jenny-yuan.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Gianna Huang",
+    "role": "Data Science Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/gianna-huang.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Zijie Yuan",
+    "role": "Data Science Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Encoded Therapeutics",
+    "photo": "committee/photos/zijie-yuan.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Yinqi Zhao",
+    "role": "Non-Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/yinqi-zhao.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Charles Liu",
+    "role": "Non-Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/charles-liu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Maria Ciarleglio",
+    "role": "Non-Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/maria-ciarleglio.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Ran Ma",
+    "role": "Non-Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/ran-ma.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Jiying Zou",
+    "role": "Non-Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/jiying-zou-2.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Xuefeng Hou",
+    "role": "Technology",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/xuefeng-hou-2.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Yi Li",
+    "role": "Technology",
+    "committee": "Committee Members",
+    "affiliation": "Yale University",
+    "photo": "committee/photos/yi-li.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Chenqi Fu",
+    "role": "Technology",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/chenqi-fu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Lucie Zhang",
+    "role": "Technology",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/lucie-zhang.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Shreya Sreeram",
+    "role": "Technology",
+    "committee": "Committee Members",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/shreya-sreeram.jpg",
+    "profileUrl": ""
   }
 ]
