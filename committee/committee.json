@@ -35,34 +35,31 @@
   {
     "name": "Tuan Nguyen",
     "role": "Statistical Technical Programs",
-    "committee": "Steering Committee",
+    "committee": "Committee Members",
     "affiliation": "Alector",
     "photo": "committee/photos/tuan-nguyen.jpg",
-    "profileUrl": "https://www.bbsw.org/tuan-nguyen",
-    "hidden": true
+    "profileUrl": "https://www.bbsw.org/tuan-nguyen"
   },
   {
     "name": "Godwin Yung",
     "role": "Statistical Technical Programs",
-    "committee": "Steering Committee",
+    "committee": "Committee Members",
     "affiliation": "Genentech",
     "photo": "committee/photos/godwin-yung.jpeg",
-    "profileUrl": "https://www.bbsw.org/godwin-yung",
-    "hidden": true
+    "profileUrl": "https://www.bbsw.org/godwin-yung"
   },
   {
     "name": "Haijun Ma",
     "role": "Statistical Technical Programs",
-    "committee": "Steering Committee",
+    "committee": "Committee Members",
     "affiliation": "Exelixis",
     "photo": "committee/photos/haijun-ma.jpeg",
-    "profileUrl": "https://www.bbsw.org/haijun-ma",
-    "hidden": true
+    "profileUrl": "https://www.bbsw.org/haijun-ma"
   },
   {
     "name": "Li Zheng",
     "role": "Data Science Technical Programs",
-    "committee": "Steering Committee",
+    "committee": "Committee Members",
     "affiliation": "Alumis",
     "photo": "committee/photos/li-zheng.png",
     "profileUrl": "https://www.bbsw.org/li-zheng"
@@ -70,20 +67,18 @@
   {
     "name": "Laura Harris",
     "role": "Data Science Technical Programs",
-    "committee": "Steering Committee",
+    "committee": "Committee Members",
     "affiliation": "Mirum Pharmaceuticals",
     "photo": "committee/photos/laura-harris.jpg",
-    "profileUrl": "",
-    "hidden": true
+    "profileUrl": ""
   },
   {
     "name": "Nalin Tikoo",
     "role": "Data Science Technical Programs",
-    "committee": "Steering Committee",
+    "committee": "Committee Members",
     "affiliation": "TrapezoidX",
     "photo": "committee/photos/nalin-tikoo.png",
-    "profileUrl": "https://www.bbsw.org/nalin",
-    "hidden": true
+    "profileUrl": "https://www.bbsw.org/nalin"
   },
   {
     "name": "Merrill Birkner",
@@ -275,7 +270,8 @@
     "committee": "Committee Members",
     "affiliation": "UCSF",
     "photo": "committee/photos/li-zhang.jpg",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Tara Maddala",
@@ -283,7 +279,8 @@
     "committee": "Committee Members",
     "affiliation": "Pandora Bio",
     "photo": "committee/photos/tara-maddala.png",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Mengjia Yu",
@@ -291,7 +288,8 @@
     "committee": "Committee Members",
     "affiliation": "AbbVie",
     "photo": "committee/photos/mengjia-yu.jpg",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Jenny Yuan",
@@ -299,7 +297,8 @@
     "committee": "Committee Members",
     "affiliation": "Scorpion Therapeutics",
     "photo": "committee/photos/jenny-yuan.png",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Gianna Huang",
@@ -307,7 +306,8 @@
     "committee": "Committee Members",
     "affiliation": "Gilead",
     "photo": "committee/photos/gianna-huang.png",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Zijie Yuan",
@@ -315,7 +315,8 @@
     "committee": "Committee Members",
     "affiliation": "Encoded Therapeutics",
     "photo": "committee/photos/zijie-yuan.jpg",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Yinqi Zhao",
