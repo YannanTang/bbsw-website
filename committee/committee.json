@@ -41,6 +41,14 @@
     "profileUrl": ""
   },
   {
+    "name": "Merrill Birkner",
+    "role": "Statistical Technical Programs",
+    "committee": "Committee Members",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/merrill-birkner.jpeg",
+    "profileUrl": "https://www.bbsw.org/merrill-birkner"
+  },
+  {
     "name": "Tuan Nguyen",
     "role": "Statistical Technical Programs",
     "committee": "Committee Members",
@@ -73,8 +81,7 @@
     "committee": "Committee Members",
     "affiliation": "Alumis",
     "photo": "committee/photos/li-zheng.png",
-    "profileUrl": "https://www.bbsw.org/li-zheng",
-    "hidden": true
+    "profileUrl": "https://www.bbsw.org/li-zheng"
   },
   {
     "name": "Laura Harris",
@@ -96,11 +103,19 @@
   },
   {
     "name": "Merrill Birkner",
-    "role": "Non-Technical Programs",
+    "role": "Statistical Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "Gilead",
     "photo": "committee/photos/merrill-birkner.jpeg",
     "profileUrl": "https://www.bbsw.org/merrill-birkner"
+  },
+  {
+    "name": "Li Zheng",
+    "role": "Data Science Technical Programs",
+    "committee": "Steering Committee",
+    "affiliation": "Alumis",
+    "photo": "committee/photos/li-zheng.png",
+    "profileUrl": "https://www.bbsw.org/li-zheng"
   },
   {
     "name": "George Wu",
