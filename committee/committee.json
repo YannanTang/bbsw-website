@@ -5,7 +5,8 @@
     "committee": "Steering Committee",
     "affiliation": "Alumis",
     "photo": "committee/photos/ruixiao-lu.jpg",
-    "profileUrl": "https://www.bbsw.org/ruixiao-lu"
+    "profileUrl": "https://www.bbsw.org/ruixiao-lu",
+    "hidden": true
   },
   {
     "name": "Ron Yu",
@@ -37,7 +38,8 @@
     "committee": "Steering Committee",
     "affiliation": "Alector",
     "photo": "committee/photos/tuan-nguyen.jpg",
-    "profileUrl": "https://www.bbsw.org/tuan-nguyen"
+    "profileUrl": "https://www.bbsw.org/tuan-nguyen",
+    "hidden": true
   },
   {
     "name": "Godwin Yung",
@@ -45,7 +47,8 @@
     "committee": "Steering Committee",
     "affiliation": "Genentech",
     "photo": "committee/photos/godwin-yung.jpeg",
-    "profileUrl": "https://www.bbsw.org/godwin-yung"
+    "profileUrl": "https://www.bbsw.org/godwin-yung",
+    "hidden": true
   },
   {
     "name": "Haijun Ma",
@@ -53,7 +56,8 @@
     "committee": "Steering Committee",
     "affiliation": "Exelixis",
     "photo": "committee/photos/haijun-ma.jpeg",
-    "profileUrl": "https://www.bbsw.org/haijun-ma"
+    "profileUrl": "https://www.bbsw.org/haijun-ma",
+    "hidden": true
   },
   {
     "name": "Li Zheng",
@@ -69,7 +73,8 @@
     "committee": "Steering Committee",
     "affiliation": "Mirum Pharmaceuticals",
     "photo": "committee/photos/laura-harris.jpg",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Nalin Tikoo",
@@ -77,7 +82,8 @@
     "committee": "Steering Committee",
     "affiliation": "TrapezoidX",
     "photo": "committee/photos/nalin-tikoo.png",
-    "profileUrl": "https://www.bbsw.org/nalin"
+    "profileUrl": "https://www.bbsw.org/nalin",
+    "hidden": true
   },
   {
     "name": "Merrill Birkner",

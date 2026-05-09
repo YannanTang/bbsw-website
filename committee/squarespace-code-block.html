@@ -134,8 +134,8 @@
   fetch(JSON_URL)
     .then(function (r) { return r.json(); })
     .then(function (members) {
-      var steering = members.filter(function (m) { return m.committee === 'Steering Committee'; });
-      var regular  = members.filter(function (m) { return m.committee === 'Committee Members'; });
+      var steering = members.filter(function (m) { return m.committee === 'Steering Committee' && !m.hidden; });
+      var regular  = members.filter(function (m) { return m.committee === 'Committee Members' && !m.hidden; });
       var grouped  = groupByRole(regular);
 
       var html = '';
