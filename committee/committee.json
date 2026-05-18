@@ -46,7 +46,8 @@
     "committee": "Committee Members",
     "affiliation": "Gilead",
     "photo": "committee/photos/merrill-birkner.jpeg",
-    "profileUrl": "https://www.bbsw.org/merrill-birkner"
+    "profileUrl": "https://www.bbsw.org/merrill-birkner",
+    "hidden": true
   },
   {
     "name": "Li Zheng",
@@ -54,7 +55,8 @@
     "committee": "Committee Members",
     "affiliation": "Alumis",
     "photo": "committee/photos/li-zheng.png",
-    "profileUrl": "https://www.bbsw.org/li-zheng"
+    "profileUrl": "https://www.bbsw.org/li-zheng",
+    "hidden": true
   },
   {
     "name": "Tuan Nguyen",
@@ -107,7 +109,8 @@
     "committee": "Steering Committee",
     "affiliation": "Gilead",
     "photo": "committee/photos/merrill-birkner.jpeg",
-    "profileUrl": "https://www.bbsw.org/merrill-birkner"
+    "profileUrl": "https://www.bbsw.org/merrill-birkner",
+    "hidden": true
   },
   {
     "name": "Li Zheng",
@@ -115,7 +118,8 @@
     "committee": "Steering Committee",
     "affiliation": "Alumis",
     "photo": "committee/photos/li-zheng.png",
-    "profileUrl": "https://www.bbsw.org/li-zheng"
+    "profileUrl": "https://www.bbsw.org/li-zheng",
+    "hidden": true
   },
   {
     "name": "George Wu",
@@ -123,7 +127,8 @@
     "committee": "Steering Committee",
     "affiliation": "Gilead",
     "photo": "committee/photos/george-wu.png",
-    "profileUrl": ""
+    "profileUrl": "",
+    "hidden": true
   },
   {
     "name": "Yannan Tang",
