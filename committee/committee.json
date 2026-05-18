@@ -4,7 +4,7 @@
     "role": "President",
     "committee": "Steering Committee",
     "affiliation": "Alumis",
-    "photo": "committee/photos/ruixiao-lu.jpg",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/3b8862ae-070e-45a7-a391-2dd3621ed0d0/Ruixiao+Lu+2025.jpg",
     "profileUrl": "https://www.bbsw.org/ruixiao-lu",
     "hidden": true
   },
@@ -13,7 +13,7 @@
     "role": "President",
     "committee": "Steering Committee",
     "affiliation": "Gilead",
-    "photo": "committee/photos/ron-yu.jpg",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/c5417b70-5deb-4cc1-95f6-8787adbb2806/Ron+Yu.jpg",
     "profileUrl": "https://www.bbsw.org/ron-yu"
   },
   {
@@ -21,7 +21,7 @@
     "role": "President-Elect",
     "committee": "Steering Committee",
     "affiliation": "AbbVie",
-    "photo": "committee/photos/ning-leng.jpeg",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/b5846ae7-958b-4be3-921e-b712e4a20dc8/Ning+Leng+2026.jpeg",
     "profileUrl": "https://www.bbsw.org/ning-leng"
   },
   {
@@ -29,7 +29,7 @@
     "role": "Operations Team Lead",
     "committee": "Steering Committee",
     "affiliation": "Annexon Biosciences",
-    "photo": "committee/photos/jing-du.jpg",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/1b6327f2-e289-4e89-9b68-837ad1cbf077/Jing+Du+2025.jpg",
     "profileUrl": ""
   },
   {
@@ -37,7 +37,7 @@
     "role": "Fundraising & Outreach Team Lead",
     "committee": "Steering Committee",
     "affiliation": "Neurocrine Biosciences",
-    "photo": "committee/photos/jingjing-gao.png",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/a935fc0d-17fd-4f51-9373-4b1aec16adbb/Jingjing+Gao.png",
     "profileUrl": "https://www.bbsw.org/jingjing-gao"
   },
   {
@@ -45,7 +45,7 @@
     "role": "Statistical Programs Team Lead",
     "committee": "Committee Members",
     "affiliation": "Gilead",
-    "photo": "committee/photos/merrill-birkner.jpeg",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/c3713ebc-4193-4a3c-926c-2e78725f69b7/Merrill+Birkner.jpeg",
     "profileUrl": "https://www.bbsw.org/merrill-birkner",
     "hidden": true
   },
@@ -54,7 +54,7 @@
     "role": "Data Science Programs Team Lead",
     "committee": "Committee Members",
     "affiliation": "Alumis",
-    "photo": "committee/photos/li-zheng.png",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/951f1036-8dd0-4664-955b-a409f8575d5f/Li+Zheng.png",
     "profileUrl": "https://www.bbsw.org/li-zheng",
     "hidden": true
   },
@@ -81,7 +81,7 @@
     "role": "Statistical Technical Programs",
     "committee": "Committee Members",
     "affiliation": "Exelixis",
-    "photo": "committee/photos/haijun-ma.jpeg",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/aafba362-f273-4ee5-b83f-6c9349543fa5/Haijun+Ma.jpeg",
     "profileUrl": "https://www.bbsw.org/haijun-ma",
     "hidden": true
   },
@@ -108,7 +108,7 @@
     "role": "Statistical Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "Gilead",
-    "photo": "committee/photos/merrill-birkner.jpeg",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/c3713ebc-4193-4a3c-926c-2e78725f69b7/Merrill+Birkner.jpeg",
     "profileUrl": "https://www.bbsw.org/merrill-birkner",
     "hidden": true
   },
@@ -117,7 +117,7 @@
     "role": "Data Science Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "Alumis",
-    "photo": "committee/photos/li-zheng.png",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/951f1036-8dd0-4664-955b-a409f8575d5f/Li+Zheng.png",
     "profileUrl": "https://www.bbsw.org/li-zheng",
     "hidden": true
   },
@@ -126,7 +126,7 @@
     "role": "Non-Technical Programs",
     "committee": "Steering Committee",
     "affiliation": "Gilead",
-    "photo": "committee/photos/george-wu.png",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/77f7f321-23a1-492c-8013-2ff47683b054/George%2BWu.webp",
     "profileUrl": "",
     "hidden": true
   },
@@ -143,7 +143,7 @@
     "role": "Fundraising & Outreach",
     "committee": "Committee Members",
     "affiliation": "Neurocrine Biosciences",
-    "photo": "committee/photos/jingjing-gao.png",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/a935fc0d-17fd-4f51-9373-4b1aec16adbb/Jingjing+Gao.png",
     "profileUrl": "https://www.bbsw.org/jingjing-gao"
   },
   {
@@ -263,7 +263,7 @@
     "role": "Operations",
     "committee": "Committee Members",
     "affiliation": "Annexon Biosciences",
-    "photo": "committee/photos/jing-du.jpg",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/1b6327f2-e289-4e89-9b68-837ad1cbf077/Jing+Du+2025.jpg",
     "profileUrl": ""
   },
   {
@@ -474,24 +474,24 @@
     "role": "Early in Career Networking",
     "committee": "Session Chairs",
     "affiliation": "",
-    "photo": "committee/photos/placeholder.svg",
-    "profileUrl": ""
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/f06599cc-edba-4d36-b965-1a41c7c8af35/James+Reimann+OCT2025.png",
+    "profileUrl": "https://www.bbsw.org/james-reimann"
   },
   {
     "name": "Ruixiao Lu",
     "role": "AI Panel",
     "committee": "Session Chairs",
     "affiliation": "Alumis",
-    "photo": "committee/photos/ruixiao-lu.jpg",
-    "profileUrl": ""
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/3b8862ae-070e-45a7-a391-2dd3621ed0d0/Ruixiao+Lu+2025.jpg",
+    "profileUrl": "https://www.bbsw.org/ruixiao-lu"
   },
   {
     "name": "Haijun Ma",
     "role": "Poster Sessions",
     "committee": "Session Chairs",
     "affiliation": "Exelixis",
-    "photo": "committee/photos/haijun-ma.jpeg",
-    "profileUrl": ""
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/aafba362-f273-4ee5-b83f-6c9349543fa5/Haijun+Ma.jpeg",
+    "profileUrl": "https://www.bbsw.org/haijun-ma"
   },
   {
     "name": "Peiwen Wu",
@@ -506,8 +506,8 @@
     "role": "FDA Guidances & Bayesian Methods",
     "committee": "Session Chairs",
     "affiliation": "Genentech",
-    "photo": "committee/photos/placeholder.svg",
-    "profileUrl": ""
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/d452fae7-5f92-4f83-8fc9-614e1007e06e/ChristinaRabe.jpg",
+    "profileUrl": "https://www.bbsw.org/christina-rabe"
   },
   {
     "name": "Tony Jiang",
@@ -538,8 +538,8 @@
     "role": "Strategic Partnership",
     "committee": "Session Chairs",
     "affiliation": "Amgen",
-    "photo": "committee/photos/placeholder.svg",
-    "profileUrl": ""
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/fdb06c24-2845-428d-b1ee-7901bdb6d99c/Haoda+Fu.jpg",
+    "profileUrl": "https://www.bbsw.org/haoda-fu"
   },
   {
     "name": "Huang Huang",
@@ -554,7 +554,7 @@
     "role": "Leadership & Career Development",
     "committee": "Session Chairs",
     "affiliation": "Gilead",
-    "photo": "committee/photos/george-wu.png",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/77f7f321-23a1-492c-8013-2ff47683b054/George%2BWu.webp",
     "profileUrl": ""
   },
   {
@@ -562,15 +562,15 @@
     "role": "Leadership & Career Development",
     "committee": "Session Chairs",
     "affiliation": "AstraZeneca",
-    "photo": "committee/photos/placeholder.svg",
-    "profileUrl": ""
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/a1e7efd9-1217-4f7d-9626-05ec88abc816/PhotoID2+-+Judy+Li.jpg",
+    "profileUrl": "https://www.bbsw.org/judy-li"
   },
   {
     "name": "Merrill Birkner",
     "role": "Enterprise Data Strategy",
     "committee": "Session Chairs",
     "affiliation": "Gilead",
-    "photo": "committee/photos/merrill-birkner.jpeg",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/c3713ebc-4193-4a3c-926c-2e78725f69b7/Merrill+Birkner.jpeg",
     "profileUrl": "https://www.bbsw.org/merrill-birkner"
   },
   {
@@ -578,7 +578,7 @@
     "role": "Enterprise Data Strategy",
     "committee": "Session Chairs",
     "affiliation": "Alumis",
-    "photo": "committee/photos/li-zheng.png",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/951f1036-8dd0-4664-955b-a409f8575d5f/Li+Zheng.png",
     "profileUrl": "https://www.bbsw.org/li-zheng"
   },
   {
@@ -594,8 +594,8 @@
     "role": "Digital Twins & Causal ML",
     "committee": "Session Chairs",
     "affiliation": "Corcept Therapeutics",
-    "photo": "committee/photos/placeholder.svg",
-    "profileUrl": ""
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/e1b088cc-df0d-4c42-84f1-939de13308bf/Cristina+Tudor.jpg",
+    "profileUrl": "https://www.bbsw.org/cristina-tudor"
   },
   {
     "name": "Sunny Xie",

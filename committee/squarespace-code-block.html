@@ -119,8 +119,11 @@
   }
 
   function card(member, showRole) {
-    var photoHtml = member.photo
-      ? '<img src="' + GITHUB_RAW + member.photo + '" alt="' + member.name + '" loading="lazy">'
+    var photoSrc = member.photo
+      ? (member.photo.startsWith('http') ? member.photo : GITHUB_RAW + member.photo)
+      : null;
+    var photoHtml = photoSrc
+      ? '<img src="' + photoSrc + '" alt="' + member.name + '" loading="lazy">'
       : '<div class="bbsw-photo-placeholder"></div>';
     return (
       '<div class="bbsw-card">' +
