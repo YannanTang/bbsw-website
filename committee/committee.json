@@ -455,5 +455,173 @@
     "affiliation": "Genentech",
     "photo": "committee/photos/shreya-sreeram.png",
     "profileUrl": ""
+  },
+  {
+    "name": "Anqi Zhu",
+    "role": "Day 0 Workshop",
+    "committee": "Session Chairs",
+    "affiliation": "Genentech",
+    "photo": "committee/photos/anqi-zhu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "James Reimann",
+    "role": "Early in Career Networking",
+    "committee": "Session Chairs",
+    "affiliation": "",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Ruixiao Lu",
+    "role": "AI Panel",
+    "committee": "Session Chairs",
+    "affiliation": "Alumis",
+    "photo": "committee/photos/ruixiao-lu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Haijun Ma",
+    "role": "Poster Sessions",
+    "committee": "Session Chairs",
+    "affiliation": "Exelixis",
+    "photo": "committee/photos/haijun-ma.jpeg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Peiwen Wu",
+    "role": "Poster Sessions",
+    "committee": "Session Chairs",
+    "affiliation": "",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Christina Rabe",
+    "role": "FDA Guidances & Bayesian Methods",
+    "committee": "Session Chairs",
+    "affiliation": "Genentech",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Tony Jiang",
+    "role": "FDA Guidances & Bayesian Methods",
+    "committee": "Session Chairs",
+    "affiliation": "Astellas",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Dong Xi",
+    "role": "Innovative Trial Design",
+    "committee": "Session Chairs",
+    "affiliation": "Gilead",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Mengjia Yu",
+    "role": "Innovative Trial Design",
+    "committee": "Session Chairs",
+    "affiliation": "AbbVie",
+    "photo": "committee/photos/mengjia-yu.jpg",
+    "profileUrl": ""
+  },
+  {
+    "name": "Haoda Fu",
+    "role": "Strategic Partnership",
+    "committee": "Session Chairs",
+    "affiliation": "Amgen",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Huang Huang",
+    "role": "Strategic Partnership",
+    "committee": "Session Chairs",
+    "affiliation": "Exelixis",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "George Wu",
+    "role": "Leadership & Career Development",
+    "committee": "Session Chairs",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/george-wu.png",
+    "profileUrl": ""
+  },
+  {
+    "name": "Judy Li",
+    "role": "Leadership & Career Development",
+    "committee": "Session Chairs",
+    "affiliation": "AstraZeneca",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Merrill Birkner",
+    "role": "Enterprise Data Strategy",
+    "committee": "Session Chairs",
+    "affiliation": "Gilead",
+    "photo": "committee/photos/merrill-birkner.jpeg",
+    "profileUrl": "https://www.bbsw.org/merrill-birkner"
+  },
+  {
+    "name": "Li Zheng",
+    "role": "Enterprise Data Strategy",
+    "committee": "Session Chairs",
+    "affiliation": "Alumis",
+    "photo": "committee/photos/li-zheng.png",
+    "profileUrl": "https://www.bbsw.org/li-zheng"
+  },
+  {
+    "name": "Harry Yang",
+    "role": "Digital Twins & Causal ML",
+    "committee": "Session Chairs",
+    "affiliation": "Recursion",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Cristina Tudor",
+    "role": "Digital Twins & Causal ML",
+    "committee": "Session Chairs",
+    "affiliation": "Corcept Therapeutics",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Sunny Xie",
+    "role": "Emerging Technology",
+    "committee": "Session Chairs",
+    "affiliation": "AstraZeneca",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Daniel Sjoberg",
+    "role": "Emerging Technology",
+    "committee": "Session Chairs",
+    "affiliation": "Genentech",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Radia Johnson",
+    "role": "Real World Data",
+    "committee": "Session Chairs",
+    "affiliation": "Tempus AI",
+    "photo": "",
+    "profileUrl": ""
+  },
+  {
+    "name": "Jacqueline Law",
+    "role": "Real World Data",
+    "committee": "Session Chairs",
+    "affiliation": "Flatiron Health",
+    "photo": "",
+    "profileUrl": ""
   }
 ]

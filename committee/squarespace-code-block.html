@@ -87,6 +87,14 @@
     color: #888;
     font-style: italic;
   }
+
+  .bbsw-card .bbsw-photo-placeholder {
+    width: 120px;
+    height: 160px;
+    border-radius: 8px;
+    background: #e8e8e8;
+    margin-bottom: 10px;
+  }
 </style>
 
 <div id="bbsw-committee">
@@ -111,10 +119,12 @@
   }
 
   function card(member, showRole) {
-    var imgSrc = GITHUB_RAW + member.photo;
+    var photoHtml = member.photo
+      ? '<img src="' + GITHUB_RAW + member.photo + '" alt="' + member.name + '" loading="lazy">'
+      : '<div class="bbsw-photo-placeholder"></div>';
     return (
       '<div class="bbsw-card">' +
-        '<img src="' + imgSrc + '" alt="' + member.name + '" loading="lazy">' +
+        photoHtml +
         nameEl(member) +
         (showRole ? '<span class="bbsw-role">' + member.role + '</span>' : '') +
         (member.affiliation ? '<span class="bbsw-affiliation">' + member.affiliation + '</span>' : '') +
@@ -140,6 +150,7 @@
     .then(function (r) { return r.json(); })
     .then(function (members) {
       var steering = members.filter(function (m) { return m.committee === 'Steering Committee' && !m.hidden; });
+      var chairs   = members.filter(function (m) { return m.committee === 'Session Chairs' && !m.hidden; });
       var regular  = members.filter(function (m) { return m.committee === 'Committee Members' && !m.hidden; });
       var grouped  = groupByRole(regular);
 
@@ -149,6 +160,12 @@
       html += '<div class="bbsw-section-heading">Steering Committee</div>';
       html += '<div class="bbsw-grid">';
       steering.forEach(function (m) { html += card(m, true); });
+      html += '</div>';
+
+      // Session Chairs
+      html += '<div class="bbsw-section-heading">Session Chairs</div>';
+      html += '<div class="bbsw-grid">';
+      chairs.forEach(function (m) { html += card(m, true); });
       html += '</div>';
 
       // Committee Members grouped by role
