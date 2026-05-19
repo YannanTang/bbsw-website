@@ -470,14 +470,6 @@
     "profileUrl": ""
   },
   {
-    "name": "James Reimann",
-    "role": "Early in Career Networking",
-    "committee": "Session Chairs",
-    "affiliation": "",
-    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/f06599cc-edba-4d36-b965-1a41c7c8af35/James+Reimann+OCT2025.png",
-    "profileUrl": "https://www.bbsw.org/james-reimann"
-  },
-  {
     "name": "Ruixiao Lu",
     "role": "AI Panel",
     "committee": "Session Chairs",
@@ -628,5 +620,13 @@
     "affiliation": "Flatiron Health",
     "photo": "committee/photos/placeholder.svg",
     "profileUrl": ""
+  },
+  {
+    "name": "James Reimann",
+    "role": "Early in Career Networking",
+    "committee": "Session Chairs",
+    "affiliation": "",
+    "photo": "https://images.squarespace-cdn.com/content/v1/5c4f6c7789c172ed71d6f025/f06599cc-edba-4d36-b965-1a41c7c8af35/James+Reimann+OCT2025.png",
+    "profileUrl": "https://www.bbsw.org/james-reimann"
   }
 ]
