@@ -149,7 +149,7 @@
     return { order: order, groups: groups };
   }
 
-  fetch(JSON_URL)
+  fetch(JSON_URL + '?t=' + Date.now())
     .then(function (r) { return r.json(); })
     .then(function (members) {
       var steering = members.filter(function (m) { return m.committee === 'Steering Committee' && !m.hidden; });
