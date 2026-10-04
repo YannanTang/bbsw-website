@@ -1,0 +1,78 @@
+<!doctype html>
+<!--
+  Local preview for squarespace-code-block.html. Not pasted into Squarespace.
+
+  Serve the parent BBSW/ folder (it contains both bbsw-website/ and bbsw-app/) and open this page:
+    cd /path/to/BBSW && python3 -m http.server 8080
+    http://localhost:8080/bbsw-website/sponsors/preview.html
+
+  Pick the data source with the links at the top (or the URL hash):
+    #local       bbsw-app files on disk (default)
+    #branch      the pushed bbsw-app feature branch on GitHub (TEST ONLY)
+    #production  exactly what the published Squarespace block uses
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BBSW Sponsors — local preview</title>
+  <style>
+    body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #222; background: #fff; }
+    .preview-bar { position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center;
+      padding: 10px 16px; background: #222; color: #ddd; font-size: 13px; }
+    .preview-bar a { color: #fff; padding: 3px 9px; border-radius: 999px; border: 1px solid #555; text-decoration: none; }
+    .preview-bar a.active { background: #c0392b; border-color: #c0392b; }
+    .preview-page { max-width: 1100px; margin: 0 auto; padding: 32px 0 80px; }
+    .preview-page h1 { font-size: 2.2em; margin: 0 16px 8px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="preview-bar">
+    <strong>Sponsor block preview</strong>
+    <span>Data source:</span>
+    <a href="#local">Local bbsw-app files</a>
+    <a href="#branch">bbsw-app feature branch (test)</a>
+    <a href="#production">Production</a>
+  </div>
+  <main class="preview-page">
+    <h1>Sponsors</h1>
+    <div id="block-host"></div>
+  </main>
+
+  <script>
+    // Test data sources live here only, never in squarespace-code-block.html.
+    var BRANCH = 'https://raw.githubusercontent.com/YannanTang/bbsw-app/feature/2026-sponsor-pages';
+    var SOURCES = {
+      local: { label: 'local bbsw-app files', dataUrl: '/bbsw-app/src/data/sponsors.json', logoBase: '/bbsw-app/public' },
+      branch: { label: 'bbsw-app feature/2026-sponsor-pages', dataUrl: BRANCH + '/src/data/sponsors.json', logoBase: BRANCH + '/public' },
+      production: null
+    };
+    var mode = location.hash.slice(1);
+    if (!(mode in SOURCES)) mode = 'local';
+    document.querySelectorAll('.preview-bar a').forEach(function (a) {
+      if (a.getAttribute('href') === '#' + mode) a.className = 'active';
+    });
+    window.addEventListener('hashchange', function () { location.reload(); });
+
+    // A test harness may preset the source; otherwise use the selected mode (null = production).
+    if (!('BBSW_SPONSORS_TEST_SOURCE' in window)) window.BBSW_SPONSORS_TEST_SOURCE = SOURCES[mode];
+
+    // Load the real code block file and run it exactly as Squarespace would.
+    fetch('squarespace-code-block.html', { cache: 'no-store' })
+      .then(function (r) { return r.text(); })
+      .then(function (html) {
+        var host = document.getElementById('block-host');
+        host.innerHTML = html;
+        host.querySelectorAll('script').forEach(function (old) {
+          var s = document.createElement('script');
+          s.textContent = old.textContent;
+          old.parentNode.replaceChild(s, old);
+        });
+      })
+      .catch(function () {
+        document.getElementById('block-host').textContent =
+          'Could not load squarespace-code-block.html. Serve the BBSW/ folder over HTTP (see the comment at the top of this file).';
+      });
+  </script>
+</body>
+</html>
