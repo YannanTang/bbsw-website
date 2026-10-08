@@ -1,0 +1,255 @@
+<!--
+  BBSW 2026 conference page: paste this whole file into one Code Block on the BBSW 2026 page.
+
+  Content comes from two places, so editing never requires re-pasting this block:
+    - bbsw-website/bbsw-2026/page.json: registration links, app card, Day 0 details, flyers
+    - bbsw-app/src/data/sessions.json + speakers.json: keynotes and the agenda (same data as app.bbsw.org)
+  Changes appear on bbsw.org within about 5 minutes of being pushed to main.
+-->
+<style>
+  #bbsw-2026 { --teal: #1f7f77; --teal-dark: #17655e; --teal-tint: #e9f5f4; --red: #e41e2b; --text: #202020; --muted: #6b6b6b; --line: #e6e6e6; --soft: #f6f8f8;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--text); max-width: 960px; margin: 0 auto; line-height: 1.5; }
+  #bbsw-2026 * { box-sizing: border-box; }
+  #bbsw-2026 a { color: inherit; }
+  #bbsw-2026 .b26-section { margin: 0 0 56px; }
+  #bbsw-2026 .b26-label { font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 18px; text-align: center; }
+  #bbsw-2026 .b26-muted { color: var(--muted); }
+  #bbsw-2026 .b26-loading { text-align: center; color: var(--muted); }
+
+  /* Buttons: same look as the site's Squarespace buttons */
+  #bbsw-2026 .b26-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 40px; }
+  #bbsw-2026 .b26-btn { display: inline-block; background: var(--teal); color: #fff; text-decoration: none; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 30px; border-radius: 300px; text-align: center; transition: background 0.15s ease; }
+  #bbsw-2026 .b26-btn:hover, #bbsw-2026 .b26-btn:focus-visible { background: var(--teal-dark); color: #fff; }
+  #bbsw-2026 .b26-btn-outline { background: transparent; color: var(--teal-dark); box-shadow: inset 0 0 0 2px var(--teal); }
+  #bbsw-2026 .b26-btn-outline:hover, #bbsw-2026 .b26-btn-outline:focus-visible { background: var(--teal); color: #fff; }
+  #bbsw-2026 .b26-note { text-align: center; font-size: 15px; margin: 18px 0 0; }
+
+  /* App card */
+  #bbsw-2026 .b26-app { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; background: var(--teal-tint);
+    border: 1px solid #cfe7e4; border-radius: 20px; padding: 28px 32px; }
+  #bbsw-2026 .b26-app-icon { display: block; width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+  #bbsw-2026 .b26-app-icon img { width: 100%; height: 100%; display: block; }
+  #bbsw-2026 .b26-app h2 { font-family: "adobe-garamond-pro", Georgia, serif; font-size: 28px; line-height: 1.2; margin: 0 0 6px; font-weight: 700; }
+  #bbsw-2026 .b26-app p { margin: 0 0 16px; font-size: 16px; }
+  #bbsw-2026 .b26-qr { text-align: center; font-size: 12px; color: var(--muted); }
+  #bbsw-2026 .b26-qr img { width: 112px; height: 112px; display: block; margin: 0 auto 6px; }
+
+  /* Keynotes */
+  #bbsw-2026 .b26-keynotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  #bbsw-2026 .b26-keynote { display: flex; gap: 18px; align-items: center; padding: 20px; border: 1px solid var(--line); border-radius: 16px; text-decoration: none; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+  #bbsw-2026 .b26-keynote:hover, #bbsw-2026 .b26-keynote:focus-visible { border-color: var(--teal); box-shadow: 0 4px 14px rgba(0,0,0,0.06); }
+  #bbsw-2026 .b26-avatar { flex: none; width: 84px; height: 84px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #b3233a, #7a1426); color: #fff; font-family: "adobe-garamond-pro", Georgia, serif; font-size: 30px; font-weight: 700; }
+  #bbsw-2026 .b26-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  #bbsw-2026 .b26-kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-dark); }
+  #bbsw-2026 .b26-name { font-family: "adobe-garamond-pro", Georgia, serif; font-size: 22px; font-weight: 700; line-height: 1.2; margin: 2px 0; }
+  #bbsw-2026 .b26-role { font-size: 14px; color: var(--muted); }
+
+  /* Agenda */
+  #bbsw-2026 .b26-days { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  #bbsw-2026 .b26-day { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  #bbsw-2026 .b26-day h3 { margin: 0; padding: 16px 20px 12px; background: #fff; color: var(--teal); border-bottom: 3px solid var(--teal); font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+  #bbsw-2026 .b26-day ol { list-style: none; margin: 0; padding: 6px 0; }
+  #bbsw-2026 .b26-row { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 9px 20px; font-size: 14px; }
+  #bbsw-2026 .b26-row + .b26-row { border-top: 1px solid #f0f0f0; }
+  #bbsw-2026 .b26-time { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  #bbsw-2026 .b26-row.is-break { color: var(--muted); }
+  #bbsw-2026 .b26-row a { text-decoration: none; font-weight: 600; }
+  #bbsw-2026 .b26-row a:hover, #bbsw-2026 .b26-row a:focus-visible { color: var(--teal-dark); text-decoration: underline; }
+  #bbsw-2026 .b26-parallel { display: block; margin-top: 4px; font-weight: 400; }
+  #bbsw-2026 .b26-tag { display: inline-block; min-width: 26px; margin-right: 6px; padding: 0 6px; border-radius: 4px; background: var(--teal-tint); color: var(--teal-dark); font-size: 12px; font-weight: 700; text-align: center; }
+  #bbsw-2026 .b26-agenda-foot { text-align: center; margin-top: 22px; }
+
+  /* Day 0 */
+  #bbsw-2026 .b26-day0 { border: 1px solid var(--line); border-top: 4px solid var(--red); background: #fff; border-radius: 16px; padding: 24px 28px; }
+  #bbsw-2026 .b26-day0-kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); margin: 0 0 4px; }
+  #bbsw-2026 .b26-day0 h2 { font-family: "adobe-garamond-pro", Georgia, serif; font-size: 26px; margin: 0 0 12px; font-weight: 700; line-height: 1.2; }
+  #bbsw-2026 .b26-day0 dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 0 0 12px; }
+  #bbsw-2026 .b26-day0 dt { font-weight: 600; }
+  #bbsw-2026 .b26-day0 dd { margin: 0; }
+  #bbsw-2026 .b26-day0 p { margin: 0 0 12px; }
+  #bbsw-2026 .b26-rates { display: flex; flex-wrap: wrap; gap: 12px; }
+  #bbsw-2026 .b26-rate { flex: 1 1 200px; background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 10px 16px; font-size: 14px; }
+  #bbsw-2026 .b26-rate strong { display: block; font-size: 22px; color: var(--text); }
+
+  /* Flyers */
+  #bbsw-2026 .b26-flyers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  #bbsw-2026 .b26-flyers a { display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  #bbsw-2026 .b26-flyers a:hover, #bbsw-2026 .b26-flyers a:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+  #bbsw-2026 .b26-flyers img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; object-position: top; }
+  #bbsw-2026 .b26-hint { text-align: center; font-size: 13px; color: var(--muted); margin-top: 10px; }
+
+  @media (max-width: 760px) {
+    #bbsw-2026 .b26-section { margin-bottom: 44px; }
+    #bbsw-2026 .b26-buttons { flex-direction: column; align-items: stretch; gap: 12px; }
+    #bbsw-2026 .b26-app { grid-template-columns: auto 1fr; padding: 22px; gap: 18px; }
+    #bbsw-2026 .b26-app-icon { width: 84px; height: 84px; border-radius: 19px; }
+    #bbsw-2026 .b26-app h2 { font-size: 22px; }
+    #bbsw-2026 .b26-app .b26-btn { display: block; }
+    #bbsw-2026 .b26-app-body { grid-column: 1 / -1; }
+    #bbsw-2026 .b26-qr { display: none; } /* already on a phone */
+    #bbsw-2026 .b26-days { grid-template-columns: 1fr; }
+    #bbsw-2026 .b26-row { grid-template-columns: 78px 1fr; padding: 9px 16px; }
+    #bbsw-2026 .b26-flyers { grid-template-columns: 1fr 1fr; }
+    #bbsw-2026 .b26-day0 { padding: 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #bbsw-2026 * { transition: none !important; }
+  }
+</style>
+
+<div id="bbsw-2026">
+  <p class="b26-loading">Loading BBSW 2026&hellip;</p>
+</div>
+
+<script>
+(function () {
+  // Where content is read from. preview.html overrides these to test unpublished changes.
+  var SRC = window.BBSW2026_SOURCES || {
+    site: 'https://raw.githubusercontent.com/YannanTang/bbsw-website/main/',
+    appData: 'https://raw.githubusercontent.com/YannanTang/bbsw-app/main/src/data/',
+    app: 'https://app.bbsw.org/'
+  };
+  var root = document.getElementById('bbsw-2026');
+  if (!root) return;
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function siteUrl(p) { return /^https?:/.test(p) ? p : SRC.site + p.replace(/^\//, ''); }
+  function appUrl(p) { return SRC.app + p.replace(/^\//, ''); }
+  function getJson(url) { return fetch(url).then(function (r) { if (!r.ok) throw new Error(url); return r.json(); }); }
+  function initials(name) {
+    return name.split(/\s+/).filter(Boolean).map(function (w) { return w[0]; }).slice(0, 2).join('').toUpperCase();
+  }
+  function dayLabel(date) {
+    var d = new Date(date + 'T12:00:00');
+    return d.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+  }
+  function shortDay(date) {
+    var d = new Date(date + 'T12:00:00');
+    return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+  }
+
+  function registration(page) {
+    var r = page.registration;
+    if (!r) return '';
+    return '<div class="b26-section">' +
+      '<div class="b26-buttons">' + r.buttons.map(function (b, i) {
+        return '<a class="b26-btn' + (i ? ' b26-btn-outline' : '') + '" href="' + esc(b.url) + '" target="_blank" rel="noopener">' + esc(b.label) + '</a>';
+      }).join('') + '</div>' +
+      (r.note ? '<p class="b26-note">' + esc(r.note) + '</p>' : '') +
+    '</div>';
+  }
+
+  function appCard(page) {
+    var a = page.app;
+    if (!a) return '';
+    return '<div class="b26-section"><div class="b26-app">' +
+      '<a class="b26-app-icon" href="' + esc(a.url) + '" target="_blank" rel="noopener" aria-label="' + esc(a.title) + '">' +
+        '<img src="' + esc(SRC.appIcon || a.icon) + '" alt="" width="112" height="112"></a>' +
+      '<div class="b26-app-body"><h2>' + esc(a.title) + '</h2><p>' + esc(a.text) + '</p>' +
+        '<a class="b26-btn" href="' + esc(a.url) + '" target="_blank" rel="noopener">' + esc(a.button) + '</a></div>' +
+      '<div class="b26-qr"><img src="' + esc(siteUrl('bbsw-2026/app-qr.png')) + '" alt="QR code for app.bbsw.org" width="112" height="112">' + esc(a.qrCaption) + '</div>' +
+    '</div></div>';
+  }
+
+  function keynotes(sessions, speakers) {
+    var byId = {};
+    speakers.forEach(function (s) { byId[s.id] = s; });
+    var cards = sessions.filter(function (s) { return /^keynote/i.test(s.id); }).map(function (s) {
+      var sp = s.talks[0] && byId[s.talks[0].speakers[0]];
+      if (!sp) return '';
+      var face = sp.photo
+        ? '<img src="' + esc(appUrl(sp.photo)) + '" alt="">'
+        : esc(initials(sp.name));
+      var role = [sp.title, sp.affiliation].filter(Boolean).join(', ');
+      return '<a class="b26-keynote" href="' + esc(appUrl('speakers/' + sp.id)) + '" target="_blank" rel="noopener">' +
+        '<span class="b26-avatar" aria-hidden="true">' + face + '</span>' +
+        '<span><span class="b26-kicker">Keynote &middot; ' + esc(shortDay(s.date)) + ', ' + esc(s.startTime) + '</span>' +
+        '<span class="b26-name" style="display:block">' + esc(sp.name) + '</span>' +
+        '<span class="b26-role">' + esc(role) + '</span></span></a>';
+    }).join('');
+    if (!cards) return '';
+    return '<div class="b26-section"><p class="b26-label">Keynote speakers</p><div class="b26-keynotes">' + cards + '</div></div>';
+  }
+
+  function agenda(sessions) {
+    // Day 0 has its own section; the agenda covers the two main days.
+    var dates = [];
+    sessions.forEach(function (s) { if (s.date && s.startTime && dates.indexOf(s.date) === -1) dates.push(s.date); });
+    dates.sort();
+    var days = dates.map(function (date, i) {
+      // Sessions that start at the same time run in parallel and share one row.
+      var rows = [];
+      sessions.filter(function (s) { return s.date === date && s.startTime; }).forEach(function (s) {
+        var last = rows[rows.length - 1];
+        if (last && last.time === s.startTime && s.track !== 'Break') last.items.push(s);
+        else rows.push({ time: s.startTime, items: [s] });
+      });
+      var items = rows.map(function (row) {
+        var isBreak = row.items.length === 1 && row.items[0].track === 'Break';
+        var body;
+        if (row.items.length > 1) {
+          var m = row.items[0].title.match(/^Parallel Session #(\d+)/);
+          body = '<strong>' + (m ? 'Parallel Sessions ' + m[1] : 'Concurrent sessions') + '</strong>' +
+            row.items.map(function (s) {
+              var p = s.title.match(/^Parallel Session #(\w+):\s*(.*)$/);
+              var tag = p ? '<span class="b26-tag">' + esc(p[1]) + '</span>' : '';
+              return '<a class="b26-parallel" href="' + esc(appUrl('sessions/' + s.id)) + '" target="_blank" rel="noopener">' + tag + esc(p ? p[2] : s.title) + '</a>';
+            }).join('');
+        } else {
+          var s = row.items[0];
+          body = isBreak ? esc(s.title)
+            : '<a href="' + esc(appUrl('sessions/' + s.id)) + '" target="_blank" rel="noopener">' + esc(s.title) + '</a>';
+        }
+        return '<li class="b26-row' + (isBreak ? ' is-break' : '') + '"><span class="b26-time">' + esc(row.time) + '</span><span>' + body + '</span></li>';
+      }).join('');
+      return '<div class="b26-day"><h3>Day ' + (i + 1) + ' &middot; ' + esc(dayLabel(date)) + '</h3><ol>' + items + '</ol></div>';
+    }).join('');
+    return '<div class="b26-section"><p class="b26-label">Agenda at a glance</p><div class="b26-days">' + days + '</div>' +
+      '<p class="b26-agenda-foot"><a class="b26-btn b26-btn-outline" href="' + esc(appUrl('schedule')) + '" target="_blank" rel="noopener">Full schedule, talks &amp; speakers in the app</a></p>' +
+      '<p class="b26-hint">Agenda subject to change.</p></div>';
+  }
+
+  function day0(page) {
+    var d = page.day0;
+    if (!d) return '';
+    return '<div class="b26-section"><div class="b26-day0"><p class="b26-day0-kicker">Pre-conference &middot; Nov 4</p><h2>' + esc(d.heading) + '</h2>' +
+      '<dl>' + d.details.map(function (x) { return '<dt>' + esc(x.label) + '</dt><dd>' + esc(x.value) + '</dd>'; }).join('') + '</dl>' +
+      '<p>' + esc(d.text) + '</p>' +
+      '<div class="b26-rates">' + d.rates.map(function (x) { return '<div class="b26-rate"><strong>' + esc(x.value) + '</strong>' + esc(x.label) + '</div>'; }).join('') + '</div>' +
+    '</div></div>';
+  }
+
+  function flyers(page) {
+    if (!page.flyers || !page.flyers.length) return '';
+    return '<div class="b26-section"><p class="b26-label">Conference flyers</p><div class="b26-flyers">' +
+      page.flyers.map(function (f) {
+        var src = siteUrl(f.image);
+        return '<a href="' + esc(src) + '" target="_blank" rel="noopener"><img src="' + esc(src) + '" alt="' + esc(f.alt) + '" loading="lazy"></a>';
+      }).join('') + '</div><p class="b26-hint">Tap a flyer to open it full size.</p></div>';
+  }
+
+  function sponsorsLink(page) {
+    if (!page.sponsorsPage) return '';
+    return '<div class="b26-section" style="text-align:center"><a class="b26-btn b26-btn-outline" href="' + esc(page.sponsorsPage) + '">Meet our 2026 sponsors</a></div>';
+  }
+
+  Promise.all([
+    getJson(SRC.site + 'bbsw-2026/page.json'),
+    getJson(SRC.appData + 'sessions.json').catch(function () { return []; }),
+    getJson(SRC.appData + 'speakers.json').catch(function () { return []; })
+  ]).then(function (res) {
+    var page = res[0], sessions = res[1], speakers = res[2];
+    root.innerHTML =
+      registration(page) + day0(page) + appCard(page) + keynotes(sessions, speakers) +
+      (sessions.length ? agenda(sessions) : '') + flyers(page) + sponsorsLink(page);
+  }).catch(function () {
+    root.innerHTML = '<p class="b26-loading">Could not load the conference details. Please refresh, or visit <a href="https://app.bbsw.org">app.bbsw.org</a>.</p>';
+  });
+}());
+</script>
