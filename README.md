@@ -39,3 +39,44 @@ Re-paste the Code Block only when `squarespace-code-block.html` itself changes (
 
 ### Previewing changes
 From the repo root run `python3 -m http.server 8026` and open <http://localhost:8026/bbsw-2026/preview.html>. The preview reads `page.json`, flyers and the QR code from your local checkout, so unpushed edits show up.
+
+## Sponsors
+
+The Sponsor page is a Squarespace Code Block: [`sponsors/squarespace-code-block.html`](sponsors/squarespace-code-block.html).  
+It shows sponsors as logo tiles grouped by tier (Diamond, Platinum, Gold, Silver); clicking a logo opens its details below that row.
+
+Sponsor data and logos are **not** stored in this repo. The block loads them from the [bbsw-app](https://github.com/YannanTang/bbsw-app) repo, the same files the conference app uses:
+- Data: `https://raw.githubusercontent.com/YannanTang/bbsw-app/main/src/data/sponsors.json`
+- Logos: `https://app.bbsw.org/sponsors/<id>.png` (from `bbsw-app/public/sponsors/`)
+
+### Adding or updating a sponsor
+1. In bbsw-app, add the logo to `public/sponsors/` and the record to `src/data/sponsors.json`
+2. Merge to bbsw-app `main` — the app deploys, and the Squarespace page shows the change within ~10 minutes
+
+No change to this repo or to Squarespace is needed.
+
+### Changing the page's code
+1. Edit `sponsors/squarespace-code-block.html` and preview it (below)
+2. Paste the whole file into the Sponsor page's Code Block in Squarespace
+3. Commit and push
+
+Only production URLs belong in the code block. Test data sources are set outside it, as below.
+
+### Previewing locally
+Serve the parent folder that contains both `bbsw-website/` and `bbsw-app/`, then open the preview page:
+```sh
+cd BBSW && python3 -m http.server 8080
+# http://localhost:8080/bbsw-website/sponsors/preview.html
+```
+Choose the data source at the top of the page: local bbsw-app files, the bbsw-app feature branch on GitHub (test), or production.
+
+### Testing on the hidden Squarespace page with test data
+The published block always uses production data. To view it with other data **in your own browser only**, run this in the browser console on the Sponsor page, then reload:
+```js
+localStorage.setItem('bbsw-sponsors-test-source', JSON.stringify({
+  label: 'bbsw-app feature branch',
+  dataUrl: 'https://raw.githubusercontent.com/YannanTang/bbsw-app/feature/2026-sponsor-pages/src/data/sponsors.json',
+  logoBase: 'https://raw.githubusercontent.com/YannanTang/bbsw-app/feature/2026-sponsor-pages/public'
+}));
+```
+A yellow "TEST DATA SOURCE" banner shows while this is set. Remove it with `localStorage.removeItem('bbsw-sponsors-test-source')`.
