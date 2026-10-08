@@ -245,8 +245,8 @@
   ]).then(function (res) {
     var page = res[0], sessions = res[1], speakers = res[2];
     root.innerHTML =
-      registration(page) + appCard(page) + keynotes(sessions, speakers) +
-      (sessions.length ? agenda(sessions) : '') + day0(page) + flyers(page) + sponsorsLink(page);
+      registration(page) + day0(page) + appCard(page) + keynotes(sessions, speakers) +
+      (sessions.length ? agenda(sessions) : '') + flyers(page) + sponsorsLink(page);
   }).catch(function () {
     root.innerHTML = '<p class="b26-loading">Could not load the conference details. Please refresh, or visit <a href="https://app.bbsw.org">app.bbsw.org</a>.</p>';
   });
