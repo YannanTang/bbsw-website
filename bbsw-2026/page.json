@@ -1,0 +1,42 @@
+{
+  "registration": {
+    "buttons": [
+      {
+        "label": "Conference Registration",
+        "url": "https://events.ticketleap.com/tickets/bbsw-tickets/bay-area-biotech-pharma-statistics-workshop-2026"
+      },
+      {
+        "label": "Day 0 Workshops Registration",
+        "url": "https://events.ticketleap.com/tickets/bbsw-tickets/bay-area-biotech-pharma-statistics-workshop-2026-day-0-workshop"
+      }
+    ],
+    "note": "Registration will be closed one month prior to the event, or when capacity is reached."
+  },
+  "app": {
+    "url": "https://app.bbsw.org/home",
+    "icon": "https://app.bbsw.org/app-icon-rounded.png",
+    "title": "BBSW 2026 Conference App",
+    "text": "The full agenda, speakers, posters, sponsors and venue details, all on your phone. Add it to your home screen before you arrive.",
+    "button": "Open the app",
+    "qrCaption": "Scan to open on your phone"
+  },
+  "day0": {
+    "heading": "Day 0: Hands-on Vibe Coding Workshop",
+    "details": [
+      { "label": "Location", "value": "Genentech Campus in South San Francisco" },
+      { "label": "Date", "value": "Nov 4, one day prior to the main conference" }
+    ],
+    "text": "Requires a separate registration from the main BBSW conference tickets. You may attend the hands-on session on its own or add it to your conference registration at a discounted bundle.",
+    "rates": [
+      { "label": "Conference attendees (add-on)", "value": "$100" },
+      { "label": "Hands-on session only (standalone)", "value": "$200" }
+    ]
+  },
+  "flyers": [
+    { "image": "bbsw-2026/flyers/01-conference-overview.jpg", "alt": "BBSW 2026 conference overview: keynote speakers and two-day agenda" },
+    { "image": "bbsw-2026/flyers/02-sponsors.jpg", "alt": "Thank you to our BBSW 2026 sponsors" },
+    { "image": "bbsw-2026/flyers/03-featured-sessions.jpg", "alt": "BBSW 2026 featured sessions" },
+    { "image": "bbsw-2026/flyers/04-parallel-sessions.jpg", "alt": "BBSW 2026 parallel sessions" }
+  ],
+  "sponsorsPage": "/sponsors-2026"
+}

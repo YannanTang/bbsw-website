@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- Local preview of the BBSW 2026 code block. From the repo root run:
+       python3 -m http.server 8026
+     then open http://localhost:8026/bbsw-2026/preview.html
+     page.json, flyers and the QR code come from this checkout (so unpushed edits show up);
+     the agenda and keynotes come from bbsw-app on GitHub, exactly as on bbsw.org. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BBSW 2026 page preview</title>
+  <style>
+    body { margin: 0; background: #fff; font-family: "Helvetica Neue", Arial, sans-serif; }
+    .sq-page { max-width: 1020px; margin: 0 auto; padding: 48px 24px 80px; }
+    .sq-native { text-align: center; margin-bottom: 36px; color: #202020; }
+    .sq-native h1 { font-family: Georgia, serif; font-size: 44px; margin: 0 0 8px; }
+    .sq-native p { font-family: Georgia, serif; font-size: 18px; margin: 0; color: #444; }
+    .sq-tag { display: inline-block; font: 600 11px/1 "Helvetica Neue", Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase;
+      color: #888; border: 1px dashed #bbb; border-radius: 4px; padding: 4px 8px; margin-bottom: 12px; }
+  </style>
+  <script>
+    window.BBSW2026_SOURCES = {
+      site: '/',
+      appData: 'https://raw.githubusercontent.com/YannanTang/bbsw-app/main/src/data/',
+      app: 'https://app.bbsw.org/',
+      // Until app-icon-rounded.png is live on app.bbsw.org, preview with a local copy if present.
+      appIcon: new URLSearchParams(location.search).get('icon') || undefined
+    };
+  </script>
+</head>
+<body>
+  <div class="sq-page">
+    <div class="sq-native">
+      <span class="sq-tag">Squarespace text block (typed in the editor)</span>
+      <h1>BBSW 2026 Annual Conference</h1>
+      <p><em>The Adaptive Data Scientist: From Data to Impact</em> &middot; November 5&ndash;6, 2026 &middot; Crowne Plaza, Foster City, CA</p>
+    </div>
+    <div class="sq-tag" style="display:table;margin:0 auto 20px">Squarespace code block (this repo)</div>
+    <div id="block"></div>
+  </div>
+  <script>
+    fetch('squarespace-code-block.html').then(function (r) { return r.text(); }).then(function (html) {
+      var host = document.getElementById('block');
+      host.innerHTML = html;
+      host.querySelectorAll('script').forEach(function (old) {
+        var s = document.createElement('script');
+        s.textContent = old.textContent;
+        old.replaceWith(s);
+      });
+    });
+  </script>
+</body>
+</html>
