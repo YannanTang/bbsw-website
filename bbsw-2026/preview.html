@@ -39,7 +39,8 @@
     <div id="block"></div>
   </div>
   <script>
-    fetch('squarespace-code-block.html').then(function (r) { return r.text(); }).then(function (html) {
+    // ?block=other-file.html previews an alternative version of the block side by side.
+    fetch(new URLSearchParams(location.search).get('block') || 'squarespace-code-block.html').then(function (r) { return r.text(); }).then(function (html) {
       var host = document.getElementById('block');
       host.innerHTML = html;
       host.querySelectorAll('script').forEach(function (old) {

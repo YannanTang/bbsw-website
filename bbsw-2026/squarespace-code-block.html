@@ -7,7 +7,7 @@
   Changes appear on bbsw.org within about 5 minutes of being pushed to main.
 -->
 <style>
-  #bbsw-2026 { --teal: #36b3a8; --teal-dark: #2a9188; --red: #e41e2b; --text: #202020; --muted: #6b6b6b; --line: #e6e6e6; --soft: #f6f8f8;
+  #bbsw-2026 { --teal: #1f7f77; --teal-dark: #17655e; --teal-tint: #e9f5f4; --red: #e41e2b; --text: #202020; --muted: #6b6b6b; --line: #e6e6e6; --soft: #f6f8f8;
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--text); max-width: 960px; margin: 0 auto; line-height: 1.5; }
   #bbsw-2026 * { box-sizing: border-box; }
   #bbsw-2026 a { color: inherit; }
@@ -26,8 +26,8 @@
   #bbsw-2026 .b26-note { text-align: center; font-size: 15px; margin: 18px 0 0; }
 
   /* App card */
-  #bbsw-2026 .b26-app { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; background: var(--soft);
-    border: 1px solid var(--line); border-radius: 20px; padding: 28px 32px; }
+  #bbsw-2026 .b26-app { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; background: var(--teal-tint);
+    border: 1px solid #cfe7e4; border-radius: 20px; padding: 28px 32px; }
   #bbsw-2026 .b26-app-icon { display: block; width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
   #bbsw-2026 .b26-app-icon img { width: 100%; height: 100%; display: block; }
   #bbsw-2026 .b26-app h2 { font-family: "adobe-garamond-pro", Georgia, serif; font-size: 28px; line-height: 1.2; margin: 0 0 6px; font-weight: 700; }
@@ -49,7 +49,7 @@
   /* Agenda */
   #bbsw-2026 .b26-days { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   #bbsw-2026 .b26-day { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
-  #bbsw-2026 .b26-day h3 { margin: 0; padding: 14px 20px; background: var(--teal); color: #fff; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+  #bbsw-2026 .b26-day h3 { margin: 0; padding: 16px 20px 12px; background: #fff; color: var(--teal); border-bottom: 3px solid var(--teal); font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
   #bbsw-2026 .b26-day ol { list-style: none; margin: 0; padding: 6px 0; }
   #bbsw-2026 .b26-row { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 9px 20px; font-size: 14px; }
   #bbsw-2026 .b26-row + .b26-row { border-top: 1px solid #f0f0f0; }
@@ -58,19 +58,20 @@
   #bbsw-2026 .b26-row a { text-decoration: none; font-weight: 600; }
   #bbsw-2026 .b26-row a:hover, #bbsw-2026 .b26-row a:focus-visible { color: var(--teal-dark); text-decoration: underline; }
   #bbsw-2026 .b26-parallel { display: block; margin-top: 4px; font-weight: 400; }
-  #bbsw-2026 .b26-tag { display: inline-block; min-width: 26px; margin-right: 6px; padding: 0 6px; border-radius: 4px; background: #e8f5f4; color: var(--teal-dark); font-size: 12px; font-weight: 700; text-align: center; }
+  #bbsw-2026 .b26-tag { display: inline-block; min-width: 26px; margin-right: 6px; padding: 0 6px; border-radius: 4px; background: var(--teal-tint); color: var(--teal-dark); font-size: 12px; font-weight: 700; text-align: center; }
   #bbsw-2026 .b26-agenda-foot { text-align: center; margin-top: 22px; }
 
   /* Day 0 */
-  #bbsw-2026 .b26-day0 { border-left: 4px solid var(--red); background: #fdf5f5; border-radius: 0 16px 16px 0; padding: 24px 28px; }
+  #bbsw-2026 .b26-day0 { border: 1px solid var(--line); border-top: 4px solid var(--red); background: #fff; border-radius: 16px; padding: 24px 28px; }
+  #bbsw-2026 .b26-day0-kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); margin: 0 0 4px; }
   #bbsw-2026 .b26-day0 h2 { font-family: "adobe-garamond-pro", Georgia, serif; font-size: 26px; margin: 0 0 12px; font-weight: 700; line-height: 1.2; }
   #bbsw-2026 .b26-day0 dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 0 0 12px; }
   #bbsw-2026 .b26-day0 dt { font-weight: 600; }
   #bbsw-2026 .b26-day0 dd { margin: 0; }
   #bbsw-2026 .b26-day0 p { margin: 0 0 12px; }
   #bbsw-2026 .b26-rates { display: flex; flex-wrap: wrap; gap: 12px; }
-  #bbsw-2026 .b26-rate { flex: 1 1 200px; background: #fff; border: 1px solid #f1d6d8; border-radius: 12px; padding: 10px 16px; font-size: 14px; }
-  #bbsw-2026 .b26-rate strong { display: block; font-size: 22px; color: var(--red); }
+  #bbsw-2026 .b26-rate { flex: 1 1 200px; background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 10px 16px; font-size: 14px; }
+  #bbsw-2026 .b26-rate strong { display: block; font-size: 22px; color: var(--text); }
 
   /* Flyers */
   #bbsw-2026 .b26-flyers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
@@ -137,8 +138,8 @@
     var r = page.registration;
     if (!r) return '';
     return '<div class="b26-section">' +
-      '<div class="b26-buttons">' + r.buttons.map(function (b) {
-        return '<a class="b26-btn" href="' + esc(b.url) + '" target="_blank" rel="noopener">' + esc(b.label) + '</a>';
+      '<div class="b26-buttons">' + r.buttons.map(function (b, i) {
+        return '<a class="b26-btn' + (i ? ' b26-btn-outline' : '') + '" href="' + esc(b.url) + '" target="_blank" rel="noopener">' + esc(b.label) + '</a>';
       }).join('') + '</div>' +
       (r.note ? '<p class="b26-note">' + esc(r.note) + '</p>' : '') +
     '</div>';
@@ -217,7 +218,7 @@
   function day0(page) {
     var d = page.day0;
     if (!d) return '';
-    return '<div class="b26-section"><div class="b26-day0"><h2>' + esc(d.heading) + '</h2>' +
+    return '<div class="b26-section"><div class="b26-day0"><p class="b26-day0-kicker">Pre-conference &middot; Nov 4</p><h2>' + esc(d.heading) + '</h2>' +
       '<dl>' + d.details.map(function (x) { return '<dt>' + esc(x.label) + '</dt><dd>' + esc(x.value) + '</dd>'; }).join('') + '</dl>' +
       '<p>' + esc(d.text) + '</p>' +
       '<div class="b26-rates">' + d.rates.map(function (x) { return '<div class="b26-rate"><strong>' + esc(x.value) + '</strong>' + esc(x.label) + '</div>'; }).join('') + '</div>' +
