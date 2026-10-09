@@ -2,15 +2,11 @@
   "registration": {
     "buttons": [
       {
-        "label": "Conference Registration",
-        "url": "https://events.ticketleap.com/tickets/bbsw-tickets/bay-area-biotech-pharma-statistics-workshop-2026"
-      },
-      {
-        "label": "Day 0 Workshops Registration",
+        "label": "Day 0 Workshop Registration",
         "url": "https://events.ticketleap.com/tickets/bbsw-tickets/bay-area-biotech-pharma-statistics-workshop-2026-day-0-workshop"
       }
     ],
-    "note": "Registration may close early once capacity is reached, so please register soon."
+    "note": "The main conference (Nov 5–6) is SOLD OUT. Thank you for the overwhelming response! Seats are still available for the Day 0 hands-on workshop on Nov 4."
   },
   "app": {
     "url": "https://app.bbsw.org/home",
@@ -26,9 +22,9 @@
       { "label": "Location", "value": "Genentech Campus in South San Francisco" },
       { "label": "Date", "value": "Nov 4, one day prior to the main conference" }
     ],
-    "text": "Requires a separate registration from the main BBSW conference tickets. You may attend the hands-on session on its own or add it to your conference registration at a discounted bundle.",
+    "text": "Requires a separate registration from the main BBSW conference. The main conference is sold out, but the hands-on session is open to everyone as a standalone ticket. If you already have a conference ticket, you can add it at the discounted rate.",
     "rates": [
-      { "label": "Conference attendees (add-on)", "value": "$100" },
+      { "label": "Conference ticket holders (add-on)", "value": "$100" },
       { "label": "Hands-on session only (standalone)", "value": "$200" }
     ]
   },
