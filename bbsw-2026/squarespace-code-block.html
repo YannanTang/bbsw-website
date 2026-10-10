@@ -72,6 +72,7 @@
   #bbsw-2026 .b26-rates { display: flex; flex-wrap: wrap; gap: 12px; }
   #bbsw-2026 .b26-rate { flex: 1 1 200px; background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 10px 16px; font-size: 14px; }
   #bbsw-2026 .b26-rate strong { display: block; font-size: 22px; color: var(--text); }
+  #bbsw-2026 .b26-day0 .b26-day0-link { margin: 20px 0 0; }
 
   /* Flyers */
   #bbsw-2026 .b26-flyers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
@@ -222,6 +223,7 @@
       '<dl>' + d.details.map(function (x) { return '<dt>' + esc(x.label) + '</dt><dd>' + esc(x.value) + '</dd>'; }).join('') + '</dl>' +
       '<p>' + esc(d.text) + '</p>' +
       '<div class="b26-rates">' + d.rates.map(function (x) { return '<div class="b26-rate"><strong>' + esc(x.value) + '</strong>' + esc(x.label) + '</div>'; }).join('') + '</div>' +
+      (d.link ? '<p class="b26-day0-link"><a class="b26-btn" href="' + esc(d.link.url) + '" target="_blank" rel="noopener">' + esc(d.link.label) + '</a></p>' : '') +
     '</div></div>';
   }
 
