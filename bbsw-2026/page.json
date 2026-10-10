@@ -17,11 +17,13 @@
     "qrCaption": "Scan to open on your phone"
   },
   "day0": {
-    "heading": "Day 0: Hands-on Vibe Coding Workshop",
+    "heading": "Day 0 Workshop: Agentic AI for Biometrics",
     "details": [
       { "label": "Location", "value": "Genentech Campus in South San Francisco" },
-      { "label": "Date", "value": "Nov 4, one day prior to the main conference" }
+      { "label": "Date", "value": "Wednesday, Nov 4, 1:30–4:30 PM (one day before the main conference)" },
+      { "label": "Register by", "value": "Oct 20" }
     ],
+    "link": { "label": "Workshop details & agenda", "url": "https://app.bbsw.org/sessions/day0-vibe-coding" },
     "text": "Requires a separate registration from the main BBSW conference. The main conference is sold out, but the hands-on session is open to everyone as a standalone ticket. If you already have a conference ticket, you can add it at the discounted rate.",
     "rates": [
       { "label": "Conference ticket holders (add-on)", "value": "$100" },
