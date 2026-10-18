@@ -30,11 +30,6 @@
       { "label": "Hands-on session only (standalone)", "value": "$200" }
     ]
   },
-  "flyers": [
-    { "image": "bbsw-2026/flyers/01-conference-overview.jpg", "alt": "BBSW 2026 conference overview: keynote speakers and two-day agenda" },
-    { "image": "bbsw-2026/flyers/02-sponsors.jpg", "alt": "Thank you to our BBSW 2026 sponsors" },
-    { "image": "bbsw-2026/flyers/03-featured-sessions.jpg", "alt": "BBSW 2026 featured sessions" },
-    { "image": "bbsw-2026/flyers/04-parallel-sessions.jpg", "alt": "BBSW 2026 parallel sessions" }
-  ],
+  "flyers": [],
   "sponsorsPage": "/sponsors-2026"
 }
