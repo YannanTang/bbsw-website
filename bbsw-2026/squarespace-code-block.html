@@ -49,6 +49,7 @@
   /* Agenda */
   #bbsw-2026 .b26-days { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   #bbsw-2026 .b26-day { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  #bbsw-2026 .b26-day.is-day0 { grid-column: 1 / -1; } /* Day 0 is short: full width on its own row, Day 1 and Day 2 side by side below */
   #bbsw-2026 .b26-day h3 { margin: 0; padding: 16px 20px 12px; background: #fff; color: var(--teal); border-bottom: 3px solid var(--teal); font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
   #bbsw-2026 .b26-day ol { list-style: none; margin: 0; padding: 6px 0; }
   #bbsw-2026 .b26-row { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 9px 20px; font-size: 14px; }
@@ -179,11 +180,17 @@
   }
 
   function agenda(sessions) {
-    // Day 0 has its own section; the agenda covers the two main days.
+    // Day 0 (Nov 4, the pre-conference workshop) gets its own full-width row; Day 1 and Day 2 sit side by side.
     var dates = [];
     sessions.forEach(function (s) { if (s.date && s.startTime && dates.indexOf(s.date) === -1) dates.push(s.date); });
     dates.sort();
+    var day0Date = (sessions.filter(function (s) { return /^day0/i.test(s.id); })[0] || {}).date;
+    function dayNumber(date, i) {
+      if (!day0Date) return i + 1;
+      return Math.round((new Date(date + 'T12:00:00') - new Date(day0Date + 'T12:00:00')) / 86400000);
+    }
     var days = dates.map(function (date, i) {
+      var n = dayNumber(date, i);
       // Sessions that start at the same time run in parallel and share one row.
       var rows = [];
       sessions.filter(function (s) { return s.date === date && s.startTime; }).forEach(function (s) {
@@ -209,7 +216,7 @@
         }
         return '<li class="b26-row' + (isBreak ? ' is-break' : '') + '"><span class="b26-time">' + esc(row.time) + '</span><span>' + body + '</span></li>';
       }).join('');
-      return '<div class="b26-day"><h3>Day ' + (i + 1) + ' &middot; ' + esc(dayLabel(date)) + '</h3><ol>' + items + '</ol></div>';
+      return '<div class="b26-day' + (n === 0 ? ' is-day0' : '') + '"><h3>Day ' + n + ' &middot; ' + esc(dayLabel(date)) + '</h3><ol>' + items + '</ol></div>';
     }).join('');
     return '<div class="b26-section"><p class="b26-label">Agenda at a glance</p><div class="b26-days">' + days + '</div>' +
       '<p class="b26-agenda-foot"><a class="b26-btn b26-btn-outline" href="' + esc(appUrl('schedule')) + '" target="_blank" rel="noopener">Full schedule, talks &amp; speakers in the app</a></p>' +
