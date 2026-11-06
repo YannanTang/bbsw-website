@@ -37,7 +37,7 @@
     {
       "id": "meetups",
       "name": "Meetups",
-      "status": "Open roles for 2027",
+      "status": "Open",
       "what": "Quarterly events that connect professionals across biostatistics, data science, AI and clinical development to exchange ideas, share practical knowledge and explore emerging innovations in biotech and pharma, through expert presentations, panel discussions and interactive sessions.",
       "help": [
         "Lead a quarterly meetup: topic, format, speakers, promotion and moderation",
@@ -86,6 +86,7 @@
     {
       "id": "nexus",
       "name": "Nexus",
+      "status": "Open",
       "what": "Brings members together for professional connections, shared experiences and growth through small-group discussions and community events.",
       "help": [
         "Event planning",
@@ -99,6 +100,7 @@
     {
       "id": "yoda",
       "name": "YODA",
+      "status": "Open",
       "what": "BBSW's mentorship program, connecting members with mentors for professional and personal development.",
       "help": [
         "Mentee interviews",
@@ -112,6 +114,7 @@
     {
       "id": "newsletter",
       "name": "Newsletter",
+      "status": "Open",
       "what": "Keeps our community informed, connected and inspired by sharing news, events, professional development opportunities and stories from across the biostatistics community.",
       "help": [
         "Discovering interesting topics and resources",
@@ -125,6 +128,7 @@
     {
       "id": "sponsorship",
       "name": "Sponsorship & Fundraising",
+      "status": "Open",
       "what": "Secures sponsorships and builds relationships with industry partners for the annual conference, and manages sponsor communications, benefits and engagement through the year.",
       "help": [
         "Sponsor outreach and follow-up",
@@ -138,6 +142,7 @@
     {
       "id": "tech",
       "name": "Technology",
+      "status": "Open",
       "what": "Maintains the BBSW website, builds the BBSW conference app, edits event videos, and provides tech support across BBSW.",
       "help": [
         "Website updates",
