@@ -1,0 +1,167 @@
+{
+  "intro": "BBSW is run by volunteers from across the Bay Area biostatistics and data science community. Our teams organize the annual conference, quarterly meetups, mentorship and networking programs, and the newsletter. We're looking for people who want to take ownership and help shape what BBSW does next.",
+  "signup": {
+    "url": "",
+    "label": "Apply to volunteer",
+    "comingSoon": "The application form will open soon. Please check back."
+  },
+  "gains": [
+    {
+      "title": "Connections",
+      "text": "Build connections with experienced BBSW leaders, senior industry experts and peers across the biostatistics community."
+    },
+    {
+      "title": "Leadership",
+      "text": "Own a meetup, a program or a project from start to finish."
+    },
+    {
+      "title": "New skills",
+      "text": "Public speaking, communication, event planning, and AI and digital tools."
+    },
+    {
+      "title": "A voice in the community",
+      "text": "Help decide what BBSW offers its members next."
+    }
+  ],
+  "ways": [
+    {
+      "title": "Ongoing team role",
+      "text": "Join a team and take on a continuing role, such as leading a meetup, supporting the YODA program or working on the conference app."
+    },
+    {
+      "title": "Short-term project",
+      "text": "Contribute to something specific: help with a particular event, write a newsletter article, or work on a defined project."
+    }
+  ],
+  "teams": [
+    {
+      "id": "meetups",
+      "name": "Meetups",
+      "status": "Open roles for 2027",
+      "what": "Quarterly events that connect professionals across biostatistics, data science, AI and clinical development to exchange ideas, share practical knowledge and explore emerging innovations in biotech and pharma, through expert presentations, panel discussions and interactive sessions.",
+      "help": [
+        "Lead a quarterly meetup: topic, format, speakers, promotion and moderation",
+        "Coordinate promotion for all quarterly meetups: Zoom link, flyers and at least two rounds of promotional emails",
+        "Build and maintain an interactive event-organizing guide, and publish announcements on the BBSW website and LinkedIn"
+      ],
+      "time": "Varies by role: 10 to 15 hours for one meetup a year (Meetup Lead); 2.5 to 3 hours a quarter (Event Promotion Coordinator); about 15 hours in Q1, then about 0.5 hours per meetup (Technical & Digital Innovation Coordinator)",
+      "fit": "Varies by role; see the open roles above.",
+      "roles": [
+        {
+          "role": "Quarterly Meetup Lead",
+          "openings": "4 positions",
+          "work": "Own the planning and delivery of one quarterly meetup: select the topic and format; invite speakers and moderators; coordinate the date and time; collect presentation titles, speaker bios and profile photos for promotion; arrange at least one preparation meeting with speakers or panelists; moderate or open and chair the event; and send thank-you notes afterward.",
+          "ideal": "Curious about emerging topics in data science and biotech/pharma; proactive, organized and comfortable connecting with professionals; interested in owning an event and developing public speaking and leadership skills. Event-organizing experience is welcome.",
+          "growth": "Hands-on experience in event leadership, speaker engagement, professional networking, meeting facilitation and communication with senior industry experts; confidence and visibility in the professional community.",
+          "time": "10 to 15 hours for your assigned meetup (one event a year)"
+        },
+        {
+          "role": "Event Promotion Coordinator",
+          "openings": "1 position",
+          "work": "Coordinate promotion for all quarterly meetups: set up the Zoom link; design promotional flyers and announcements; coordinate at least two rounds of promotional emails with support from the volunteer team; and share the approved attendee list with speakers and moderators one day before each event.",
+          "ideal": "Creative, detail-oriented and dependable; enjoys visual communication and coordinating people; interested in event promotion, graphic design or digital marketing. Familiarity with design tools is helpful.",
+          "growth": "Visual storytelling, promotional design, digital marketing, stakeholder coordination and communication skills; learning how to engage a professional audience.",
+          "time": "2.5 to 3 hours a quarter"
+        },
+        {
+          "role": "Technical & Digital Innovation Coordinator",
+          "openings": "1 position",
+          "work": "Develop and maintain a practical event-organizing guide, ideally an interactive tool that helps volunteers track planning activities, ownership, progress and deadlines. Publish event announcements and promotional materials on the BBSW website and LinkedIn. Explore AI-assisted vibe coding to simplify and improve the team's workflows.",
+          "ideal": "Tech-curious, resourceful and interested in new digital tools; enjoys solving practical problems and experimenting with AI-assisted development. Coding or website experience is helpful; willingness to learn matters most.",
+          "growth": "Hands-on experience in AI-assisted vibe coding, workflow automation, interactive tool development, website management and practical AI; the chance to build a tool the team adopts.",
+          "time": "About 15 hours in Q1 for initial development, then about 0.5 hours per meetup for updates"
+        }
+      ],
+      "points": [
+        "These are ownership roles, not simply task assignments: you drive your responsibilities, take initiative, make decisions and deliver results, with guidance and support from experienced BBSW leaders.",
+        "The roles are not mutually exclusive. You're welcome to take on more than one.",
+        "All volunteers are encouraged to help promote each meetup through their professional networks.",
+        "Interested in leading a meetup? Tell us the topic you have in mind."
+      ],
+      "link": {
+        "label": "Learn more about BBSW Meetups",
+        "url": "https://www.bbsw.org/meetupabout"
+      }
+    },
+    {
+      "id": "nexus",
+      "name": "Nexus",
+      "what": "Brings members together for professional connections, shared experiences and growth through small-group discussions and community events.",
+      "help": [
+        "Event planning",
+        "Group mapping and coordination",
+        "Program logistics",
+        "Participant feedback"
+      ],
+      "time": "About 1 to 2 hours a month, plus 1 to 2 events a year",
+      "fit": "People who enjoy connecting people, organizing activities and building communities, and who bring enthusiasm and creativity. No specific technical background needed."
+    },
+    {
+      "id": "yoda",
+      "name": "YODA",
+      "what": "BBSW's mentorship program, connecting members with mentors for professional and personal development.",
+      "help": [
+        "Mentee interviews",
+        "Program communications",
+        "Event coordination",
+        "Bringing each new cohort together"
+      ],
+      "time": "About 1 to 2 hours a month, more during cohort onboarding, plus 1 to 2 events a year",
+      "fit": "People who care about mentorship. Communication and organization skills help."
+    },
+    {
+      "id": "newsletter",
+      "name": "Newsletter",
+      "what": "Keeps our community informed, connected and inspired by sharing news, events, professional development opportunities and stories from across the biostatistics community.",
+      "help": [
+        "Discovering interesting topics and resources",
+        "Writing articles and editing content",
+        "Graphic design",
+        "Sharing stories through social media"
+      ],
+      "time": "About 1 to 2 hours a month, more around each quarterly issue",
+      "fit": "People who enjoy writing, storytelling, discovering interesting ideas or creative communication. There's room for both creative and analytical minds."
+    },
+    {
+      "id": "sponsorship",
+      "name": "Sponsorship & Fundraising",
+      "what": "Secures sponsorships and builds relationships with industry partners for the annual conference, and manages sponsor communications, benefits and engagement through the year.",
+      "help": [
+        "Sponsor outreach and follow-up",
+        "Coordinating sponsor benefits",
+        "Tracking commitments, deliverables and deadlines",
+        "Sponsor activities at the conference"
+      ],
+      "time": "About 1 to 2 hours a week during active fundraising, more in the weeks before the conference",
+      "fit": "Strong communication, interpersonal, organizational and coordination skills. Most importantly, volunteers must be responsive, proactive, detail-oriented, vigilant about deadlines, and accountable for completing assigned tasks on time."
+    },
+    {
+      "id": "tech",
+      "name": "Tech",
+      "what": "Maintains the BBSW website, builds the BBSW conference app, edits event videos, and provides tech support across BBSW.",
+      "help": [
+        "Website updates",
+        "Conference app features and content",
+        "Video editing",
+        "Tech support for events and teams"
+      ],
+      "time": "About 1 hour a week most of the year, more in the two months before the conference",
+      "fit": "Responsible, responsive and reliable people. AI vibe-coding or video-editing skills are a plus, and you can build them with us."
+    },
+    {
+      "id": "operations",
+      "name": "Operations",
+      "status": "Talent pool",
+      "what": "Supports BBSW events, including the annual conference and other in-person and online events, and BBSW's ongoing operations so the organization runs efficiently.",
+      "help": [
+        "Registration, venue, catering, check-in and on-site support",
+        "Photo and video at events",
+        "Committee coordination and meeting planning",
+        "Administrative support and process improvement"
+      ],
+      "note": "This team is highly skilled and experienced, and aims to stay agile, so it may not add members right away. We're building a pool of candidates for future needs and opportunities."
+    }
+  ],
+  "expectations": "Every team relies on its volunteers to follow through. We look for people who own their tasks, respond promptly and meet the deadlines they agree to.",
+  "process": "We review every application and reach out when there's a good fit with a team's current needs. Some teams have limited openings, so we may keep your information on file for future roles."
+}

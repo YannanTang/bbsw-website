@@ -80,3 +80,13 @@ localStorage.setItem('bbsw-sponsors-test-source', JSON.stringify({
 }));
 ```
 A yellow "TEST DATA SOURCE" banner shows while this is set. Remove it with `localStorage.removeItem('bbsw-sponsors-test-source')`.
+
+## Volunteer Page
+
+The Volunteering page is one Code Block, [`volunteer/squarespace-code-block.html`](volunteer/squarespace-code-block.html), placed under a native Squarespace text block with the page title ("Volunteer with BBSW").
+
+All text lives in [`volunteer/page.json`](volunteer/page.json): the intro, "What you gain", "Ways to get involved", the team cards (including Meetups' open roles) and the application section. Edits appear on bbsw.org within about 5 minutes of pushing to `main`; no re-paste needed.
+
+- **Application form link:** set `signup.url` in `page.json`. While it is empty, both apply buttons show the "form will open soon" note instead.
+- **Re-paste** the Code Block only when `squarespace-code-block.html` itself changes (layout or styling).
+- **Preview:** from the repo root run `python3 -m http.server 8026` and open <http://localhost:8026/volunteer/preview.html>.

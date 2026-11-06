@@ -1,0 +1,184 @@
+<!--
+  BBSW Volunteer page: paste this whole file into one Code Block on the Volunteering page.
+
+  All text comes from bbsw-website/volunteer/page.json, so editing the teams, the intro or the
+  application link never requires re-pasting this block. Changes appear on bbsw.org within about
+  5 minutes of being pushed to main. Re-paste only when this file (layout or styling) changes.
+-->
+<style>
+  #bbsw-vol { --teal: #1f7f77; --teal-dark: #17655e; --teal-tint: #e9f5f4; --text: #202020; --muted: #6b6b6b; --line: #e6e6e6; --soft: #f6f8f8;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--text); max-width: 960px; margin: 0 auto; line-height: 1.55; }
+  #bbsw-vol * { box-sizing: border-box; }
+  #bbsw-vol a { color: inherit; }
+  #bbsw-vol .bv-section { margin: 0 0 56px; }
+  #bbsw-vol .bv-label { font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 18px; text-align: center; }
+  #bbsw-vol .bv-loading { text-align: center; color: var(--muted); }
+  #bbsw-vol .bv-intro { font-size: 18px; text-align: center; max-width: 720px; margin: 0 auto 28px; }
+  #bbsw-vol .bv-center { text-align: center; }
+  #bbsw-vol .bv-soon { display: inline-block; font-size: 15px; color: var(--muted); border: 1px dashed #c9d9d7; border-radius: 12px; padding: 12px 20px; }
+
+  /* Buttons: same look as the site's Squarespace buttons */
+  #bbsw-vol .bv-btn { display: inline-block; background: var(--teal); color: #fff; text-decoration: none; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 30px; border-radius: 300px; text-align: center; transition: background 0.15s ease; }
+  #bbsw-vol .bv-btn:hover, #bbsw-vol .bv-btn:focus-visible { background: var(--teal-dark); color: #fff; }
+
+  /* What you gain */
+  #bbsw-vol .bv-gains { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  #bbsw-vol .bv-gain { background: var(--soft); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+  #bbsw-vol .bv-gain h3 { font-family: "adobe-garamond-pro", Georgia, serif; font-size: 20px; line-height: 1.2; margin: 0 0 6px; font-weight: 700; color: var(--teal-dark); }
+  #bbsw-vol .bv-gain p { margin: 0; font-size: 14px; }
+
+  /* Ways to get involved */
+  #bbsw-vol .bv-ways { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  #bbsw-vol .bv-way { border: 1px solid var(--line); border-left: 4px solid var(--teal); border-radius: 12px; padding: 18px 20px; }
+  #bbsw-vol .bv-way h3 { font-family: "adobe-garamond-pro", Georgia, serif; font-size: 22px; line-height: 1.2; margin: 0 0 6px; font-weight: 700; }
+  #bbsw-vol .bv-way p { margin: 0; font-size: 15px; }
+
+  /* Team cards */
+  #bbsw-vol .bv-teams { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  #bbsw-vol .bv-team { border: 1px solid var(--line); border-top: 4px solid var(--teal); border-radius: 16px; padding: 22px 24px; display: flex; flex-direction: column; }
+  #bbsw-vol .bv-team.is-wide { grid-column: 1 / -1; }
+  #bbsw-vol .bv-team-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin: 0 0 8px; }
+  #bbsw-vol .bv-team h3 { font-family: "adobe-garamond-pro", Georgia, serif; font-size: 26px; line-height: 1.2; margin: 0; font-weight: 700; }
+  #bbsw-vol .bv-status { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-dark); background: var(--teal-tint);
+    border-radius: 300px; padding: 4px 10px; }
+  #bbsw-vol .bv-status.is-pool { color: var(--muted); background: var(--soft); }
+  #bbsw-vol .bv-team p { margin: 0 0 12px; font-size: 15px; }
+  #bbsw-vol .bv-sub { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 6px 0 6px; }
+  #bbsw-vol .bv-team ul { margin: 0 0 12px; padding-left: 20px; font-size: 15px; }
+  #bbsw-vol .bv-team li { margin: 2px 0; }
+  #bbsw-vol .bv-facts { margin: auto 0 0; padding-top: 12px; border-top: 1px solid #f0f0f0; display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; font-size: 14px; }
+  #bbsw-vol .bv-facts dt { font-weight: 600; }
+  #bbsw-vol .bv-facts dd { margin: 0; }
+  #bbsw-vol .bv-note { font-size: 14px; color: var(--muted); font-style: italic; }
+
+  /* Meetups open roles */
+  #bbsw-vol details { margin: 4px 0 14px; }
+  #bbsw-vol summary { cursor: pointer; font-weight: 600; color: var(--teal-dark); font-size: 15px; }
+  #bbsw-vol .bv-roles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 12px; }
+  #bbsw-vol .bv-role { background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 16px; font-size: 14px; }
+  #bbsw-vol .bv-role h4 { font-size: 16px; margin: 0 0 4px; line-height: 1.3; }
+  #bbsw-vol .bv-role .bv-openings { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-dark); margin: 0 0 8px; }
+  #bbsw-vol .bv-role dl { margin: 0; }
+  #bbsw-vol .bv-role dt { font-weight: 600; margin-top: 8px; }
+  #bbsw-vol .bv-role dd { margin: 2px 0 0; }
+  #bbsw-vol .bv-points { list-style: none; padding: 0 !important; }
+  #bbsw-vol .bv-points li { position: relative; padding-left: 18px; margin: 6px 0; }
+  #bbsw-vol .bv-points li::before { content: ""; position: absolute; left: 2px; top: 0.6em; width: 7px; height: 7px; border-radius: 50%; background: var(--teal); }
+  #bbsw-vol .bv-link { font-weight: 600; color: var(--teal-dark) !important; }
+
+  /* Apply */
+  #bbsw-vol .bv-apply { background: var(--teal-tint); border: 1px solid #cfe7e4; border-radius: 20px; padding: 32px; text-align: center; }
+  #bbsw-vol .bv-apply h2 { font-family: "adobe-garamond-pro", Georgia, serif; font-size: 30px; margin: 0 0 12px; font-weight: 700; }
+  #bbsw-vol .bv-apply p { max-width: 640px; margin: 0 auto 14px; font-size: 16px; }
+  #bbsw-vol .bv-apply .bv-btn, #bbsw-vol .bv-apply .bv-soon { margin-top: 8px; }
+
+  @media (max-width: 760px) {
+    #bbsw-vol .bv-section { margin-bottom: 44px; }
+    #bbsw-vol .bv-intro { font-size: 17px; }
+    #bbsw-vol .bv-gains { grid-template-columns: 1fr 1fr; }
+    #bbsw-vol .bv-teams, #bbsw-vol .bv-ways { grid-template-columns: 1fr; }
+    #bbsw-vol .bv-team { padding: 20px; }
+    #bbsw-vol .bv-btn { display: block; }
+    #bbsw-vol .bv-apply { padding: 24px 20px; }
+    #bbsw-vol .bv-roles { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 420px) {
+    #bbsw-vol .bv-gains { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #bbsw-vol * { transition: none !important; }
+  }
+</style>
+
+<div id="bbsw-vol">
+  <p class="bv-loading">Loading volunteer opportunities&hellip;</p>
+</div>
+
+<script>
+(function () {
+  // Where content is read from. preview.html overrides this to test unpublished changes.
+  var SRC = window.BBSWVOL_SOURCES || { site: 'https://raw.githubusercontent.com/YannanTang/bbsw-website/main/' };
+  var root = document.getElementById('bbsw-vol');
+  if (!root) return;
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function applyButton(page) {
+    var s = page.signup || {};
+    return s.url
+      ? '<a class="bv-btn" href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.label || 'Apply to volunteer') + '</a>'
+      : '<span class="bv-soon">' + esc(s.comingSoon || 'The application form will open soon.') + '</span>';
+  }
+
+  function intro(page) {
+    return '<div class="bv-section">' +
+      (page.intro ? '<p class="bv-intro">' + esc(page.intro) + '</p>' : '') +
+      '<p class="bv-center">' + applyButton(page) + '</p></div>';
+  }
+
+  function gains(page) {
+    if (!page.gains || !page.gains.length) return '';
+    return '<div class="bv-section"><p class="bv-label">What you gain</p><div class="bv-gains">' +
+      page.gains.map(function (g) { return '<div class="bv-gain"><h3>' + esc(g.title) + '</h3><p>' + esc(g.text) + '</p></div>'; }).join('') +
+      '</div></div>';
+  }
+
+  function ways(page) {
+    if (!page.ways || !page.ways.length) return '';
+    return '<div class="bv-section"><p class="bv-label">Ways to get involved</p><div class="bv-ways">' +
+      page.ways.map(function (w) { return '<div class="bv-way"><h3>' + esc(w.title) + '</h3><p>' + esc(w.text) + '</p></div>'; }).join('') +
+      '</div></div>';
+  }
+
+  function roles(list) {
+    function row(label, v) { return v ? '<dt>' + label + '</dt><dd>' + esc(v) + '</dd>' : ''; }
+    return '<details><summary>See the ' + list.length + ' open roles</summary><div class="bv-roles">' +
+      list.map(function (r) {
+        return '<div class="bv-role"><h4>' + esc(r.role) + '</h4>' +
+          (r.openings ? '<span class="bv-openings">' + esc(r.openings) + '</span>' : '') +
+          '<dl>' + row('Responsibilities', r.work) + row('Ideal candidate', r.ideal) + row('Growth', r.growth) + row('Time', r.time) + '</dl></div>';
+      }).join('') + '</div></details>';
+  }
+
+  function team(t) {
+    var facts = [];
+    if (t.time) facts.push('<dt>Time</dt><dd>' + esc(t.time) + '</dd>');
+    if (t.fit) facts.push('<dt>Good fit</dt><dd>' + esc(t.fit) + '</dd>');
+    var pool = /pool/i.test(t.status || '');
+    return '<article class="bv-team' + (t.roles ? ' is-wide' : '') + '" id="team-' + esc(t.id) + '">' +
+      '<div class="bv-team-head"><h3>' + esc(t.name) + '</h3>' +
+        (t.status ? '<span class="bv-status' + (pool ? ' is-pool' : '') + '">' + esc(t.status) + '</span>' : '') + '</div>' +
+      '<p>' + esc(t.what) + '</p>' +
+      (t.help && t.help.length ? '<p class="bv-sub">You would help with</p><ul>' + t.help.map(function (h) { return '<li>' + esc(h) + '</li>'; }).join('') + '</ul>' : '') +
+      (t.roles ? roles(t.roles) : '') +
+      (t.points && t.points.length ? '<ul class="bv-points">' + t.points.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
+      (t.note ? '<p class="bv-note">' + esc(t.note) + '</p>' : '') +
+      (t.link ? '<p><a class="bv-link" href="' + esc(t.link.url) + '">' + esc(t.link.label) + ' &rarr;</a></p>' : '') +
+      (facts.length ? '<dl class="bv-facts">' + facts.join('') + '</dl>' : '') +
+    '</article>';
+  }
+
+  function teams(page) {
+    if (!page.teams || !page.teams.length) return '';
+    return '<div class="bv-section"><p class="bv-label">Our teams</p><div class="bv-teams">' + page.teams.map(team).join('') + '</div></div>';
+  }
+
+  function apply(page) {
+    return '<div class="bv-section"><div class="bv-apply" id="apply"><h2>Apply to volunteer</h2>' +
+      (page.expectations ? '<p>' + esc(page.expectations) + '</p>' : '') +
+      (page.process ? '<p>' + esc(page.process) + '</p>' : '') +
+      applyButton(page) + '</div></div>';
+  }
+
+  fetch(SRC.site + 'volunteer/page.json').then(function (r) { if (!r.ok) throw new Error(); return r.json(); }).then(function (page) {
+    root.innerHTML = intro(page) + gains(page) + ways(page) + teams(page) + apply(page);
+  }).catch(function () {
+    root.innerHTML = '<p class="bv-loading">Could not load volunteer opportunities. Please refresh the page.</p>';
+  });
+}());
+</script>
