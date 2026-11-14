@@ -1,35 +1,27 @@
 {
   "registration": {
+    "heading": "Thank you for a wonderful BBSW 2026!",
+    "note": "BBSW 2026 is a wrap. Thank you to everyone who joined us in Foster City: our speakers and session chairs, poster presenters, sponsors and partners, volunteers, and every attendee who made this sold-out conference such a lively exchange of ideas. Slides that speakers have chosen to share are now available in the conference app. We hope to see you at BBSW 2027!",
     "buttons": [
       {
-        "label": "Day 0 Workshop Registration",
-        "url": "https://events.ticketleap.com/tickets/bbsw-tickets/bay-area-biotech-pharma-statistics-workshop-2026-day-0-workshop"
+        "label": "Download the slides",
+        "url": "https://app.bbsw.org/schedule"
+      },
+      {
+        "label": "Volunteer with BBSW",
+        "url": "/volunteering"
       }
-    ],
-    "note": "The main conference (Nov 5–6) is SOLD OUT. Thank you for the overwhelming response! Seats are still available for the Day 0 hands-on workshop on Nov 4."
+    ]
   },
   "app": {
     "url": "https://app.bbsw.org/home",
     "icon": "https://app.bbsw.org/app-icon-rounded.png",
     "title": "BBSW 2026 Conference App",
-    "text": "The full agenda, speakers, posters, sponsors and venue details, all on your phone. Add it to your home screen before you arrive.",
+    "text": "The conference app stays online: browse the full program and speakers, see the poster award winners, and download the slides that speakers have shared.",
     "button": "Open the app",
     "qrCaption": "Scan to open on your phone"
   },
-  "day0": {
-    "heading": "Day 0 Workshop: Agentic AI for Biometrics",
-    "details": [
-      { "label": "Location", "value": "Genentech Campus in South San Francisco" },
-      { "label": "Date", "value": "Wednesday, Nov 4, 1:30–4:30 PM (one day before the main conference)" },
-      { "label": "Register by", "value": "Oct 20" }
-    ],
-    "link": { "label": "Workshop details & agenda", "url": "https://app.bbsw.org/sessions/day0-vibe-coding" },
-    "text": "Requires a separate registration from the main BBSW conference. The main conference is sold out, but the hands-on session is open to everyone as a standalone ticket. If you already have a conference ticket, you can add it at the discounted rate.",
-    "rates": [
-      { "label": "Conference ticket holders (add-on)", "value": "$100" },
-      { "label": "Hands-on session only (standalone)", "value": "$200" }
-    ]
-  },
   "flyers": [],
-  "sponsorsPage": "/sponsors-2026"
+  "sponsorsPage": "/sponsors-2026",
+  "agendaHint": ""
 }

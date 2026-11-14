@@ -2,7 +2,7 @@
   BBSW 2026 conference page: paste this whole file into one Code Block on the BBSW 2026 page.
 
   Content comes from two places, so editing never requires re-pasting this block:
-    - bbsw-website/bbsw-2026/page.json: registration links, app card, Day 0 details, flyers
+    - bbsw-website/bbsw-2026/page.json: top section (registration or thank-you), app card, Day 0 details, flyers, agenda hint
     - bbsw-app/src/data/sessions.json + speakers.json: keynotes and the agenda (same data as app.bbsw.org)
   Changes appear on bbsw.org within about 5 minutes of being pushed to main.
 -->
@@ -24,6 +24,8 @@
   #bbsw-2026 .b26-btn-outline { background: transparent; color: var(--teal-dark); box-shadow: inset 0 0 0 2px var(--teal); }
   #bbsw-2026 .b26-btn-outline:hover, #bbsw-2026 .b26-btn-outline:focus-visible { background: var(--teal); color: #fff; }
   #bbsw-2026 .b26-note { text-align: center; font-size: 15px; margin: 18px 0 0; }
+  #bbsw-2026 .b26-thanks { text-align: center; font-size: 30px; line-height: 1.25; font-weight: 600; color: var(--teal-dark); margin: 0 0 14px; }
+  #bbsw-2026 .b26-thanks-text { text-align: center; font-size: 17px; max-width: 720px; margin: 0 auto 26px; }
 
   /* App card */
   #bbsw-2026 .b26-app { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; background: var(--teal-tint);
@@ -140,10 +142,12 @@
     var r = page.registration;
     if (!r) return '';
     return '<div class="b26-section">' +
+      (r.heading ? '<h2 class="b26-thanks">' + esc(r.heading) + '</h2>' : '') +
+      (r.heading && r.note ? '<p class="b26-thanks-text">' + esc(r.note) + '</p>' : '') +
       '<div class="b26-buttons">' + r.buttons.map(function (b, i) {
         return '<a class="b26-btn' + (i ? ' b26-btn-outline' : '') + '" href="' + esc(b.url) + '" target="_blank" rel="noopener">' + esc(b.label) + '</a>';
       }).join('') + '</div>' +
-      (r.note ? '<p class="b26-note">' + esc(r.note) + '</p>' : '') +
+      (r.note && !r.heading ? '<p class="b26-note">' + esc(r.note) + '</p>' : '') +
     '</div>';
   }
 
@@ -179,7 +183,7 @@
     return '<div class="b26-section"><p class="b26-label">Keynote speakers</p><div class="b26-keynotes">' + cards + '</div></div>';
   }
 
-  function agenda(sessions) {
+  function agenda(sessions, page) {
     // Day 0 (Nov 4, the pre-conference workshop) gets its own full-width row; Day 1 and Day 2 sit side by side.
     var dates = [];
     sessions.forEach(function (s) { if (s.date && s.startTime && dates.indexOf(s.date) === -1) dates.push(s.date); });
@@ -220,7 +224,7 @@
     }).join('');
     return '<div class="b26-section"><p class="b26-label">Agenda at a glance</p><div class="b26-days">' + days + '</div>' +
       '<p class="b26-agenda-foot"><a class="b26-btn b26-btn-outline" href="' + esc(appUrl('schedule')) + '" target="_blank" rel="noopener">Full schedule, talks &amp; speakers in the app</a></p>' +
-      '<p class="b26-hint">Agenda subject to change.</p></div>';
+      (page.agendaHint === '' ? '' : '<p class="b26-hint">' + esc(page.agendaHint || 'Agenda subject to change.') + '</p>') + '</div>';
   }
 
   function day0(page) {
@@ -256,7 +260,7 @@
     var page = res[0], sessions = res[1], speakers = res[2];
     root.innerHTML =
       registration(page) + day0(page) + appCard(page) + keynotes(sessions, speakers) +
-      (sessions.length ? agenda(sessions) : '') + flyers(page) + sponsorsLink(page);
+      (sessions.length ? agenda(sessions, page) : '') + flyers(page) + sponsorsLink(page);
   }).catch(function () {
     root.innerHTML = '<p class="b26-loading">Could not load the conference details. Please refresh, or visit <a href="https://app.bbsw.org">app.bbsw.org</a>.</p>';
   });
